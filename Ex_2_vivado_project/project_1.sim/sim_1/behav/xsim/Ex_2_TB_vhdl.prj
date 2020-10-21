@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/imports/Ex_2/myPackEx_2.vhd" \
+"../../../../project_1.srcs/sources_1/imports/Ex_2/Ex_2_TOP.vhd" \
+"../../../../project_1.srcs/sources_1/imports/Ex_2/SeqDetector.vhd" \
+"../../../../project_1.srcs/sources_1/imports/Ex_2/SeqGenerator0.vhd" \
+"../../../../project_1.srcs/sources_1/imports/Ex_2/SeqGenerator1.vhd" \
+"../../../../project_1.srcs/sources_1/imports/Ex_2/Ex_2_TB.vhd" \
+
+# Do not sort compile order
+nosort

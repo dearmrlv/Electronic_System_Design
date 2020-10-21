@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 21 22:11:19 2020
+# Process ID: 17360
+# Current directory: C:/Users/Administrator/Desktop/VHDL_projects/Ex_3_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18696 C:\Users\Administrator\Desktop\VHDL_projects\Ex_3_vivado\Ex_3.xpr
+# Log file: C:/Users/Administrator/Desktop/VHDL_projects/Ex_3_vivado/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/VHDL_projects/Ex_3_vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/VHDL_projects/Ex_3_vivado/Ex_3.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Administrator/Desktop/VHDL_projects/Ex_3_vivado/Ex_3.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Administrator/Desktop/VHDL_projects/Ex_3_vivado/Ex_3.srcs/sim_1/new/LED_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/Administrator/Desktop/VHDL_projects/Ex_3_vivado/Ex_3.srcs/sim_1/new/LED_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source LED_tb.tcl
+relaunch_sim
+run 300 ns
+restart
+run 300 ns
+relaunch_sim
+restart
+run 300 ns
+close_sim

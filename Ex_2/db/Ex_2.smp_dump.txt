@@ -1,0 +1,26 @@
+
+State Machine - |Ex_2_TOP|SeqDetector:SD0|CrST
+Name CrST.S9 CrST.S8 CrST.S7 CrST.S6 CrST.S5 CrST.S4 CrST.S3 CrST.S2 CrST.S1 CrST.S0 
+CrST.S0 0 0 0 0 0 0 0 0 0 0 
+CrST.S1 0 0 0 0 0 0 0 0 1 1 
+CrST.S2 0 0 0 0 0 0 0 1 0 1 
+CrST.S3 0 0 0 0 0 0 1 0 0 1 
+CrST.S4 0 0 0 0 0 1 0 0 0 1 
+CrST.S5 0 0 0 0 1 0 0 0 0 1 
+CrST.S6 0 0 0 1 0 0 0 0 0 1 
+CrST.S7 0 0 1 0 0 0 0 0 0 1 
+CrST.S8 0 1 0 0 0 0 0 0 0 1 
+CrST.S9 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Ex_2_TOP|SeqGenerator1:SG1|CrST
+Name CrST.S9 CrST.S8 CrST.S7 CrST.S6 CrST.S5 CrST.S4 CrST.S3 CrST.S2 CrST.S1 CrST.S0 
+CrST.S0 0 0 0 0 0 0 0 0 0 0 
+CrST.S1 0 0 0 0 0 0 0 0 1 1 
+CrST.S2 0 0 0 0 0 0 0 1 0 1 
+CrST.S3 0 0 0 0 0 0 1 0 0 1 
+CrST.S4 0 0 0 0 0 1 0 0 0 1 
+CrST.S5 0 0 0 0 1 0 0 0 0 1 
+CrST.S6 0 0 0 1 0 0 0 0 0 1 
+CrST.S7 0 0 1 0 0 0 0 0 0 1 
+CrST.S8 0 1 0 0 0 0 0 0 0 1 
+CrST.S9 1 0 0 0 0 0 0 0 0 1 

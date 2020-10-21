@@ -1,0 +1,21 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d32988c0aacd4caca9cdf047836d2695 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Ex_2_TB_behav xil_defaultlib.Ex_2_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.mypackex_2
+Compiling architecture arcseqgen0 of entity xil_defaultlib.SeqGenerator0 [seqgenerator0_default]
+Compiling architecture arcseqgen1 of entity xil_defaultlib.SeqGenerator1 [seqgenerator1_default]
+Compiling architecture arcseqdet of entity xil_defaultlib.SeqDetector [seqdetector_default]
+Compiling architecture arctop of entity xil_defaultlib.Ex_2_TOP [ex_2_top_default]
+Compiling architecture arctb of entity xil_defaultlib.ex_2_tb
+Built simulation snapshot Ex_2_TB_behav
