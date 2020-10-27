@@ -7,12 +7,12 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Administrator/Desktop/VHDL_projects/Ex_1/simulation/modelsim
+Z0 dC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/simulation/modelsim
 T_opt
-!s110 1602904389
-V?NdL<>Kb5L0?3RC<O3@B`1
+!s110 1603596287
+VJC7[AJ7Sa^_5FQme^?kU@0
 04 6 10 work top_tb arc_top_tb 1
-=1-48ba4e4d1dc6-5f8a6145-146-25a4
+=1-48ba4e4d1dc6-5f94effe-1be-4a80
 o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work +acc
 tCvgOpt 0
 n@_opt
@@ -22,19 +22,19 @@ Z1 w1602902172
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 R0
-Z4 8C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top.vhd
-Z5 FC:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top.vhd
+Z4 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top.vhd
+Z5 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top.vhd
 l0
 L8
 Vi7AFda?;5QFeZ=h;<1kl43
 !s100 L=;Q?W?kcAiG<^;0<`EaY3
 Z6 OL;C;10.7;67
 31
-Z7 !s110 1602904388
+Z7 !s110 1603596285
 !i10b 1
-Z8 !s108 1602904388.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top.vhd|
-Z10 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top.vhd|
+Z8 !s108 1603596285.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top.vhd|
+Z10 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top.vhd|
 !i113 0
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
@@ -61,8 +61,8 @@ Z13 w1602903736
 R2
 R3
 R0
-Z14 8C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top_tb.vhd
-Z15 FC:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top_tb.vhd
+Z14 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top_tb.vhd
+Z15 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top_tb.vhd
 l0
 L8
 VjY`1iYhBm]S@B[cRmO4U;1
@@ -72,8 +72,8 @@ R6
 R7
 !i10b 1
 R8
-Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top_tb.vhd|
-Z17 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top_tb.vhd|
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top_tb.vhd|
+Z17 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top_tb.vhd|
 !i113 0
 R11
 R12

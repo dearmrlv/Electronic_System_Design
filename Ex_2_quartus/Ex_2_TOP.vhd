@@ -20,7 +20,15 @@ architecture arcTOP of Ex_2_TOP is
 
 	signal seq0, seq1 : std_logic;	-- Input for Mux2
 	signal seq_sel		: std_logic;	-- Output for Mux2
+	signal clk_500k	: std_logic;	-- Slower Clock divided from 50M-Clock
+	signal clk_5k		: std_logic;
 
+	component ClkDivider
+		port (rst_n		: IN 	std_logic;
+				clk_in	: IN 	std_logic;
+				clk_out	: OUT std_logic);
+	end component;
+	
 	component SeqGenerator0
 		port (clk, rst_n : IN std_logic;	-- Clock, Reset
 				output	: OUT std_logic);
@@ -40,9 +48,11 @@ architecture arcTOP of Ex_2_TOP is
 	end component;
 	
 	begin
-		SG0:	SeqGenerator0 port map (clk=>clk, rst_n=>rst_n, output=>seq0);
-		SG1: 	SeqGenerator1 port map (clk=>clk, rst_n=>rst_n, output=>seq1);
-		SD0: 	SeqDetector	  port map (clk=>clk, rst_n=>rst_n, SeqIn=>seq_sel, SeqNum=>SeqNum);
+		CD0: 	ClkDivider	  port map (rst_n=>rst_n, clk_in=>clk, clk_out=>clk_500k);
+		CD1: 	ClkDivider	  port map (rst_n=>rst_n, clk_in=>clk_500k, clk_out=>clk_5k);
+		SG0:	SeqGenerator0 port map (clk=>clk_5k, rst_n=>rst_n, output=>seq0);
+		SG1: 	SeqGenerator1 port map (clk=>clk_5k, rst_n=>rst_n, output=>seq1);
+		SD0: 	SeqDetector	  port map (clk=>clk_5k, rst_n=>rst_n, SeqIn=>seq_sel, SeqNum=>SeqNum);
 		
 		SEQUEBCE_SELECT: process(sel, rst_n, seq0, seq1)
 		begin

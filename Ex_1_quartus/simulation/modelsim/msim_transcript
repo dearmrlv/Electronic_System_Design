@@ -18,6 +18,7 @@
 # }
 # 
 # vlib vhdl_libs/altera
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/altera".
 # vmap altera ./vhdl_libs/altera
 # Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
 # vmap altera ./vhdl_libs/altera 
@@ -25,25 +26,25 @@
 # Modifying modelsim.ini
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_syn_attributes.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:53 on Oct 17,2020
+# Start time: 11:24:33 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_syn_attributes.vhd 
 # -- Loading package STANDARD
 # -- Compiling package altera_syn_attributes
-# End time: 11:12:53 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:33 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_standard_functions.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:54 on Oct 17,2020
+# Start time: 11:24:33 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_standard_functions.vhd 
 # -- Loading package STANDARD
 # -- Compiling package altera_standard_functions
 # -- Compiling package body altera_standard_functions
 # -- Loading package altera_standard_functions
-# End time: 11:12:54 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:33 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/alt_dspbuilder_package.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:54 on Oct 17,2020
+# Start time: 11:24:33 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/alt_dspbuilder_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -52,11 +53,11 @@
 # -- Compiling package alt_dspbuilder_package
 # -- Compiling package body alt_dspbuilder_package
 # -- Loading package alt_dspbuilder_package
-# End time: 11:12:54 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:34 on Oct 25,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_europa_support_lib.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:54 on Oct 17,2020
+# Start time: 11:24:34 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_europa_support_lib.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -67,11 +68,11 @@
 # -- Compiling package altera_europa_support_lib
 # -- Compiling package body altera_europa_support_lib
 # -- Loading package altera_europa_support_lib
-# End time: 11:12:54 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:34 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_primitives_components.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:54 on Oct 17,2020
+# Start time: 11:24:34 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_primitives_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -81,11 +82,11 @@
 # -- Compiling package dffeas_pack
 # -- Loading package dffeas_pack
 # -- Compiling package altera_primitives_components
-# End time: 11:12:54 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:34 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_primitives.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:54 on Oct 17,2020
+# Start time: 11:24:34 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_primitives.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -173,27 +174,28 @@
 # -- Compiling architecture BEHAVIOR of alt_bidir_diff
 # -- Compiling entity alt_bidir_buf
 # -- Compiling architecture BEHAVIOR of alt_bidir_buf
-# End time: 11:12:55 on Oct 17,2020, Elapsed time: 0:00:01
+# End time: 11:24:35 on Oct 25,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/lpm
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/lpm".
 # vmap lpm ./vhdl_libs/lpm
 # Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
 # vmap lpm ./vhdl_libs/lpm 
 # Modifying modelsim.ini
 # vcom -93 -work lpm {d:/softwares/quaturs/install/quartus/eda/sim_lib/220pack.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:55 on Oct 17,2020
+# Start time: 11:24:35 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work lpm d:/softwares/quaturs/install/quartus/eda/sim_lib/220pack.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package LPM_COMPONENTS
-# End time: 11:12:55 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:35 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work lpm {d:/softwares/quaturs/install/quartus/eda/sim_lib/220model.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:55 on Oct 17,2020
+# Start time: 11:24:35 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work lpm d:/softwares/quaturs/install/quartus/eda/sim_lib/220model.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -289,17 +291,18 @@
 # -- Compiling architecture LPM_SYN of LPM_OUTpad
 # -- Compiling entity LPM_BIpad
 # -- Compiling architecture LPM_SYN of LPM_BIpad
-# End time: 11:12:56 on Oct 17,2020, Elapsed time: 0:00:01
+# End time: 11:24:36 on Oct 25,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/sgate
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/sgate".
 # vmap sgate ./vhdl_libs/sgate
 # Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
 # vmap sgate ./vhdl_libs/sgate 
 # Modifying modelsim.ini
 # vcom -93 -work sgate {d:/softwares/quaturs/install/quartus/eda/sim_lib/sgate_pack.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:57 on Oct 17,2020
+# Start time: 11:24:36 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work sgate d:/softwares/quaturs/install/quartus/eda/sim_lib/sgate_pack.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -307,11 +310,11 @@
 # -- Compiling package sgate_pack
 # -- Compiling package body sgate_pack
 # -- Loading package sgate_pack
-# End time: 11:12:57 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:36 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work sgate {d:/softwares/quaturs/install/quartus/eda/sim_lib/sgate.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:57 on Oct 17,2020
+# Start time: 11:24:36 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work sgate d:/softwares/quaturs/install/quartus/eda/sim_lib/sgate.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -361,27 +364,28 @@
 # -- Compiling architecture sim_arch of oper_bus_mux
 # -- Compiling entity oper_latch
 # -- Compiling architecture sim_arch of oper_latch
-# End time: 11:12:58 on Oct 17,2020, Elapsed time: 0:00:01
+# End time: 11:24:36 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/altera_mf
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/altera_mf".
 # vmap altera_mf ./vhdl_libs/altera_mf
 # Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
 # vmap altera_mf ./vhdl_libs/altera_mf 
 # Modifying modelsim.ini
 # vcom -93 -work altera_mf {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_mf_components.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:58 on Oct 17,2020
+# Start time: 11:24:37 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work altera_mf d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_mf_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package altera_mf_components
-# End time: 11:12:58 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:37 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera_mf {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_mf.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:12:58 on Oct 17,2020
+# Start time: 11:24:37 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work altera_mf d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_mf.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -618,17 +622,18 @@
 # -- Compiling architecture sim_sld_virtual_jtag_basic of sld_virtual_jtag_basic
 # -- Compiling entity altsource_probe
 # -- Compiling architecture sim_altsource_probe of altsource_probe
-# End time: 11:13:01 on Oct 17,2020, Elapsed time: 0:00:03
+# End time: 11:24:38 on Oct 25,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/altera_lnsim
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/altera_lnsim".
 # vmap altera_lnsim ./vhdl_libs/altera_lnsim
 # Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
 # vmap altera_lnsim ./vhdl_libs/altera_lnsim 
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim {d:/softwares/quaturs/install/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv}
 # Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:13:01 on Oct 17,2020
+# Start time: 11:24:39 on Oct 25,2020
 # vlog -reportprogress 300 -sv -work altera_lnsim d:/softwares/quaturs/install/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -1317,35 +1322,36 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 11:13:03 on Oct 17,2020, Elapsed time: 0:00:02
+# End time: 11:24:41 on Oct 25,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 685
 # vcom -93 -work altera_lnsim {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_lnsim_components.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:13:04 on Oct 17,2020
+# Start time: 11:24:41 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work altera_lnsim d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_lnsim_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package altera_lnsim_components
-# End time: 11:13:04 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:41 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/cyclonev
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/cyclonev".
 # vmap cyclonev ./vhdl_libs/cyclonev
 # Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
 # vmap cyclonev ./vhdl_libs/cyclonev 
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev {d:/softwares/quaturs/install/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:13:04 on Oct 17,2020
+# Start time: 11:24:41 on Oct 25,2020
 # vlog -reportprogress 300 -vlog01compat -work cyclonev d:/softwares/quaturs/install/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 11:13:06 on Oct 17,2020, Elapsed time: 0:00:02
+# End time: 11:24:43 on Oct 25,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vcom -93 -work cyclonev {d:/softwares/quaturs/install/quartus/eda/sim_lib/cyclonev_atoms.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:13:06 on Oct 17,2020
+# Start time: 11:24:43 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work cyclonev d:/softwares/quaturs/install/quartus/eda/sim_lib/cyclonev_atoms.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1485,11 +1491,11 @@
 # -- Compiling architecture behavior of cyclonev_ir_fifo_userdes
 # -- Compiling entity cyclonev_oscillator
 # -- Compiling architecture behavior of cyclonev_oscillator
-# End time: 11:13:07 on Oct 17,2020, Elapsed time: 0:00:01
+# End time: 11:24:44 on Oct 25,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 # vcom -93 -work cyclonev {d:/softwares/quaturs/install/quartus/eda/sim_lib/cyclonev_components.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:13:07 on Oct 17,2020
+# Start time: 11:24:44 on Oct 25,2020
 # vcom -reportprogress 300 -93 -work cyclonev d:/softwares/quaturs/install/quartus/eda/sim_lib/cyclonev_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1498,7 +1504,7 @@
 # -- Loading package VITAL_Primitives
 # -- Loading package cyclonev_atom_pack
 # -- Compiling package cyclonev_components
-# End time: 11:13:07 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:44 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -1510,33 +1516,33 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top.vhd}
+# vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:13:08 on Oct 17,2020
-# vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top.vhd 
+# Start time: 11:24:45 on Oct 25,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity top
 # -- Compiling architecture arc_top of top
-# End time: 11:13:08 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:45 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top_tb.vhd}
+# vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top_tb.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 11:13:08 on Oct 17,2020
-# vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top_tb.vhd 
+# Start time: 11:24:45 on Oct 25,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity top_tb
 # -- Compiling architecture arc_top_tb of top_tb
-# End time: 11:13:08 on Oct 17,2020, Elapsed time: 0:00:00
+# End time: 11:24:45 on Oct 25,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  top_tb
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" top_tb 
-# Start time: 11:13:08 on Oct 17,2020
+# Start time: 11:24:45 on Oct 25,2020
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
@@ -1550,5 +1556,17 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1000 ns
-# End time: 12:18:21 on Oct 17,2020, Elapsed time: 1:05:13
+add wave -position insertpoint  \
+sim:/top_tb/y0_n \
+sim:/top_tb/y1_n \
+sim:/top_tb/y2_n \
+sim:/top_tb/y3_n \
+sim:/top_tb/y4_n \
+sim:/top_tb/y5_n \
+sim:/top_tb/y6_n \
+sim:/top_tb/y7_n \
+sim:/top_tb/a \
+sim:/top_tb/b \
+sim:/top_tb/c
+# End time: 11:29:54 on Oct 25,2020, Elapsed time: 0:05:09
 # Errors: 0, Warnings: 0

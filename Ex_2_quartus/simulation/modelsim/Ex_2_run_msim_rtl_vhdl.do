@@ -44,9 +44,18 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Ex_2/SeqGenerator0.vhd}
-vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Ex_2/SeqGenerator1.vhd}
-vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Ex_2/myPackEx_2.vhd}
-vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Ex_2/SeqDetector.vhd}
-vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Ex_2/Ex_2_TOP.vhd}
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd}
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator1.vhd}
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/myPackEx_2.vhd}
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqDetector.vhd}
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TOP.vhd}
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/ClkDivider.vhd}
 
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TB.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Ex_2_TB
+
+add wave *
+view structure
+view signals
+run -all

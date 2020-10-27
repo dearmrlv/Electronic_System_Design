@@ -44,9 +44,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top.vhd}
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top.vhd}
 
-vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Ex_1/top_tb.vhd}
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_1_quartus/top_tb.vhd}
 
 vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  top_tb
 

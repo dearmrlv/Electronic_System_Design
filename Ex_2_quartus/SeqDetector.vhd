@@ -66,12 +66,12 @@ begin
 										NxST <= S0;
 									end if;
 				when S5		=> if (SeqIn = '1') then
-										NxST <= S0;
+										NxST <= S1;
 									else
 										NxST <= S6;
 									end if;
 				when S6		=> if (SeqIn = '1') then
-										NxST <= S0;
+										NxST <= S1;
 									else
 										NxST <= S7;
 									end if;
@@ -97,12 +97,12 @@ begin
 	OUTPUT_LOGIC: process (CrST, rst_n)
 		begin
 		    if (rst_n = '0') then
-		        cnt <= "00000000";
+		        cnt <= "0000";
 		    else
-                case (CrST) is 
-                    when S9		=> cnt <= cnt + 1;
-                    when others => null;
-                end case;
+				 case (CrST) is 
+					  when S9		=> cnt <= cnt + 1;
+					  when others => null;
+				 end case;
 			end if;
 			SeqNum <= cnt;
 	end process;
