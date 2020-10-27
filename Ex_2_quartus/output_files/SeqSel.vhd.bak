@@ -1,0 +1,7 @@
+
+
+entity SeqSel is
+port (Seq0, Seq1 : IN 	STD_LOGIC;
+		SeqOut	  : OUT	STD_LOGIC
+		);
+end SeqSel;

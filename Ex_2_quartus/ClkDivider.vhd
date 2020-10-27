@@ -26,10 +26,10 @@ begin
 	begin
 		if (rst_n = '0') then
 			tmp <= '0';
-			cnt <= "00000000";
+			cnt <= "0000000000";
 		elsif (clk_in'event and clk_in = '1') then
 			if (cnt = CLK_DIV_NUM) then
-				cnt <= "00000000";
+				cnt <= "0000000000";
 				tmp <= NOT tmp;
 			else
 				cnt <= cnt + 1;

@@ -1,5 +1,5 @@
 Assembler report for Ex_2
-Mon Oct 19 21:23:55 2020
+Tue Oct 27 19:21:24 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Administrator/Desktop/VHDL_projects/Ex_2/output_files/Ex_2.sof
+  5. Assembler Device Options: C:/Users/liyh/Desktop/Electronic_System_Design-main/Ex_2_quartus/output_files/Ex_2.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Oct 19 21:23:55 2020 ;
+; Assembler Status      ; Successful - Tue Oct 27 19:21:24 2020 ;
 ; Revision Name         ; Ex_2                                  ;
 ; Top-level Entity Name ; Ex_2_TOP                              ;
 ; Family                ; Cyclone V                             ;
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-------------------------------------------------------------------------+
-; Assembler Generated Files                                               ;
-+-------------------------------------------------------------------------+
-; File Name                                                               ;
-+-------------------------------------------------------------------------+
-; C:/Users/Administrator/Desktop/VHDL_projects/Ex_2/output_files/Ex_2.sof ;
-+-------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                              ;
++----------------------------------------------------------------------------------------+
+; File Name                                                                              ;
++----------------------------------------------------------------------------------------+
+; C:/Users/liyh/Desktop/Electronic_System_Design-main/Ex_2_quartus/output_files/Ex_2.sof ;
++----------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Administrator/Desktop/VHDL_projects/Ex_2/output_files/Ex_2.sof ;
-+----------------+----------------------------------------------------------------------------------+
-; Option         ; Setting                                                                          ;
-+----------------+----------------------------------------------------------------------------------+
-; Device         ; 5CEFA2F23C8                                                                      ;
-; JTAG usercode  ; 0x004DDB59                                                                       ;
-; Checksum       ; 0x004DDB59                                                                       ;
-+----------------+----------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/liyh/Desktop/Electronic_System_Design-main/Ex_2_quartus/output_files/Ex_2.sof ;
++----------------+-------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                         ;
++----------------+-------------------------------------------------------------------------------------------------+
+; Device         ; 5CEFA2F23C8                                                                                     ;
+; JTAG usercode  ; 0x004E752C                                                                                      ;
+; Checksum       ; 0x004E752C                                                                                      ;
++----------------+-------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,13 +103,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Oct 19 21:23:48 2020
+    Info: Processing started: Tue Oct 27 19:21:19 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Ex_2 -c Ex_2
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4721 megabytes
-    Info: Processing ended: Mon Oct 19 21:23:55 2020
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 570 megabytes
+    Info: Processing ended: Tue Oct 27 19:21:24 2020
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 

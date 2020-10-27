@@ -5,12 +5,13 @@ rst_n => ClkDivider:CD1.rst_n
 rst_n => SeqGenerator0:SG0.rst_n
 rst_n => SeqGenerator1:SG1.rst_n
 rst_n => SeqDetector:SD0.rst_n
-rst_n => seq_sel.OUTPUTSELECT
-sel => seq_sel.OUTPUTSELECT
+rst_n => SeqSel:SS0.rst_n
+sel => SeqSel:SS0.sel
 SeqNum[0] <= SeqDetector:SD0.SeqNum[0]
 SeqNum[1] <= SeqDetector:SD0.SeqNum[1]
 SeqNum[2] <= SeqDetector:SD0.SeqNum[2]
 SeqNum[3] <= SeqDetector:SD0.SeqNum[3]
+seqShow <= SeqSel:SS0.seq_sel
 
 
 |Ex_2_TOP|ClkDivider:CD0
@@ -22,6 +23,8 @@ rst_n => cnt[4].ACLR
 rst_n => cnt[5].ACLR
 rst_n => cnt[6].ACLR
 rst_n => cnt[7].ACLR
+rst_n => cnt[8].ACLR
+rst_n => cnt[9].ACLR
 rst_n => tmp.ACLR
 clk_in => cnt[0].CLK
 clk_in => cnt[1].CLK
@@ -31,6 +34,8 @@ clk_in => cnt[4].CLK
 clk_in => cnt[5].CLK
 clk_in => cnt[6].CLK
 clk_in => cnt[7].CLK
+clk_in => cnt[8].CLK
+clk_in => cnt[9].CLK
 clk_in => tmp.CLK
 clk_out <= tmp.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -44,6 +49,8 @@ rst_n => cnt[4].ACLR
 rst_n => cnt[5].ACLR
 rst_n => cnt[6].ACLR
 rst_n => cnt[7].ACLR
+rst_n => cnt[8].ACLR
+rst_n => cnt[9].ACLR
 rst_n => tmp.ACLR
 clk_in => cnt[0].CLK
 clk_in => cnt[1].CLK
@@ -53,6 +60,8 @@ clk_in => cnt[4].CLK
 clk_in => cnt[5].CLK
 clk_in => cnt[6].CLK
 clk_in => cnt[7].CLK
+clk_in => cnt[8].CLK
+clk_in => cnt[9].CLK
 clk_in => tmp.CLK
 clk_out <= tmp.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -71,10 +80,7 @@ output <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 |Ex_2_TOP|SeqDetector:SD0
 clk => CrST~1.DATAIN
-rst_n => cnt[3].ACLR
-rst_n => cnt[2].ACLR
-rst_n => cnt[1].ACLR
-rst_n => cnt[0].ACLR
+rst_n => SeqNum[0]$latch.LATCH_ENABLE
 rst_n => CrST~3.DATAIN
 SeqIn => NxST.S1.DATAB
 SeqIn => NxST.S2.DATAB
@@ -86,9 +92,17 @@ SeqIn => Selector0.IN1
 SeqIn => NxST.S4.DATAB
 SeqIn => NxST.S6.DATAB
 SeqIn => NxST.S7.DATAB
-SeqNum[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
-SeqNum[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
-SeqNum[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
-SeqNum[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+SeqNum[0] <= SeqNum[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SeqNum[1] <= <GND>
+SeqNum[2] <= <GND>
+SeqNum[3] <= <GND>
+
+
+|Ex_2_TOP|SeqSel:SS0
+Seq0 => seq_sel.DATAA
+Seq1 => seq_sel.DATAB
+rst_n => seq_sel.OUTPUTSELECT
+sel => seq_sel.OUTPUTSELECT
+seq_sel <= seq_sel.DB_MAX_OUTPUT_PORT_TYPE
 
 

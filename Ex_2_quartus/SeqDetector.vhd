@@ -98,12 +98,15 @@ begin
 		begin
 		    if (rst_n = '0') then
 		        cnt <= "0000";
+				  
 		    else
 				 case (CrST) is 
 					  when S9		=> cnt <= cnt + 1;
-					  when others => null;
+											SeqNum <= "0001";
+					  when others => 	null;
+											SeqNum <= "0000";
 				 end case;
 			end if;
-			SeqNum <= cnt;
+			-- SeqNum <= cnt;
 	end process;
 end arcSeqDet;
