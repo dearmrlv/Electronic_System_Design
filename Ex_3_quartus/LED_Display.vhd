@@ -83,50 +83,53 @@ begin
                 LED5_data_dis <= DIS_5;
                 LED6_data_dis <= DIS_6;
                 LED7_data_dis <= DIS_7;
-            elsif (latch_en = '1') then
-                case (LED_sel) is
-                    when LED0   =>  LED0_data_dis <= LED_data_dis;
-                    when LED1   =>  LED1_data_dis <= LED_data_dis;
-                    when LED2   =>  LED2_data_dis <= LED_data_dis;
-                    when LED3   =>  LED3_data_dis <= LED_data_dis;
-                    when LED4   =>  LED4_data_dis <= LED_data_dis;
-                    when LED5   =>  LED5_data_dis <= LED_data_dis;
-                    when LED6   =>  LED6_data_dis <= LED_data_dis;
-                    when LED7   =>  LED7_data_dis <= LED_data_dis;
-                    when others =>  LED0_data_dis <= DIS_e;
-                                    LED1_data_dis <= DIS_e;
-                                    LED2_data_dis <= DIS_e;
-                                    LED3_data_dis <= DIS_e;
-                                    LED4_data_dis <= DIS_e;
-                                    LED5_data_dis <= DIS_e;
-                                    LED6_data_dis <= DIS_e;
-                                    LED7_data_dis <= DIS_e;
-                end case;
+            else
+					if (latch_en = '1') then
+						 case (LED_sel) is
+							  when LED0   =>  LED0_data_dis <= LED_data_dis;
+							  when LED1   =>  LED1_data_dis <= LED_data_dis;
+							  when LED2   =>  LED2_data_dis <= LED_data_dis;
+							  when LED3   =>  LED3_data_dis <= LED_data_dis;
+							  when LED4   =>  LED4_data_dis <= LED_data_dis;
+							  when LED5   =>  LED5_data_dis <= LED_data_dis;
+							  when LED6   =>  LED6_data_dis <= LED_data_dis;
+							  when LED7   =>  LED7_data_dis <= LED_data_dis;
+							  when others =>  LED0_data_dis <= DIS_e;
+													LED1_data_dis <= DIS_e;
+													LED2_data_dis <= DIS_e;
+													LED3_data_dis <= DIS_e;
+													LED4_data_dis <= DIS_e;
+													LED5_data_dis <= DIS_e;
+													LED6_data_dis <= DIS_e;
+													LED7_data_dis <= DIS_e;
+						 end case;
+					 end if;
             end if;
     end process;
     ------------------------------------------
     DISPLAY: process(cnt)
-        begin
-            case (cnt) is
-                when LED0   =>  data_display <= LED0_data_dis;
-                                LED_dis_sel <= LED_DIS0;
-                when LED1   =>  data_display <= LED1_data_dis;
-                                LED_dis_sel <= LED_DIS1;
-                when LED2   =>  data_display <= LED2_data_dis;
-                                LED_dis_sel <= LED_DIS2;
-                when LED3   =>  data_display <= LED3_data_dis;
-                                LED_dis_sel <= LED_DIS3;
-                when LED4   =>  data_display <= LED4_data_dis;
-                                LED_dis_sel <= LED_DIS4;
-                when LED5   =>  data_display <= LED5_data_dis;
-                                LED_dis_sel <= LED_DIS5;
-                when LED6   =>  data_display <= LED6_data_dis;
-                                LED_dis_sel <= LED_DIS6;
-                when LED7   =>  data_display <= LED7_data_dis;
-                                LED_dis_sel <= LED_DIS7;
-                when others =>  null;
-            end case;
-            DP_display <= '1';      -- Do not display the point
+       begin
+			case (cnt) is
+				 when LED0   =>  data_display <= LED0_data_dis;
+									  LED_dis_sel <= LED_DIS0;
+				 when LED1   =>  data_display <= LED1_data_dis;
+									  LED_dis_sel <= LED_DIS1;
+				 when LED2   =>  data_display <= LED2_data_dis;
+									  LED_dis_sel <= LED_DIS2;
+				 when LED3   =>  data_display <= LED3_data_dis;
+									  LED_dis_sel <= LED_DIS3;
+				 when LED4   =>  data_display <= LED4_data_dis;
+									  LED_dis_sel <= LED_DIS4;
+				 when LED5   =>  data_display <= LED5_data_dis;
+									  LED_dis_sel <= LED_DIS5;
+				 when LED6   =>  data_display <= LED6_data_dis;
+									  LED_dis_sel <= LED_DIS6;
+				 when LED7   =>  data_display <= LED7_data_dis;
+									  LED_dis_sel <= LED_DIS7;
+				 when others =>  null;
+			 end case;
+            
+			 DP_display <= '1';      -- Do not display the point
     end process;
 
 end arcDisplay;

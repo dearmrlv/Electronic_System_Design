@@ -58,4 +58,31 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_W16 -to clk
+set_location_assignment PIN_K19 -to data_display[6]
+set_location_assignment PIN_H18 -to data_display[5]
+set_location_assignment PIN_K20 -to data_display[4]
+set_location_assignment PIN_M18 -to data_display[3]
+set_location_assignment PIN_E16 -to data_display[2]
+set_location_assignment PIN_G13 -to data_display[1]
+set_location_assignment PIN_G17 -to data_display[0]
+set_location_assignment PIN_H16 -to DP_display
+set_location_assignment PIN_Y11 -to latch_en
+set_location_assignment PIN_R11 -to LED_data[3]
+set_location_assignment PIN_U12 -to LED_data[2]
+set_location_assignment PIN_V13 -to LED_data[1]
+set_location_assignment PIN_AB13 -to LED_data[0]
+set_location_assignment PIN_F13 -to LED_dis_sel[7]
+set_location_assignment PIN_E14 -to LED_dis_sel[6]
+set_location_assignment PIN_B15 -to LED_dis_sel[5]
+set_location_assignment PIN_B16 -to LED_dis_sel[4]
+set_location_assignment PIN_E12 -to LED_dis_sel[3]
+set_location_assignment PIN_D13 -to LED_dis_sel[2]
+set_location_assignment PIN_A13 -to LED_dis_sel[1]
+set_location_assignment PIN_C11 -to LED_dis_sel[0]
+set_location_assignment PIN_Y14 -to LED_sel[2]
+set_location_assignment PIN_Y15 -to LED_sel[1]
+set_location_assignment PIN_AA15 -to LED_sel[0]
+set_location_assignment PIN_N16 -to rst_n
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

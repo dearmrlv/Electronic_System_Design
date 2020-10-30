@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LED_Display
-Wed Oct 21 22:45:31 2020
+Fri Oct 30 17:23:56 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                           ;
 +-------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status         ; Successful - Wed Oct 21 22:45:31 2020            ;
+; Analysis & Synthesis Status         ; Successful - Fri Oct 30 17:23:56 2020            ;
 ; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                       ; LED_Display                                      ;
 ; Top-level Entity Name               ; LED_Display                                      ;
@@ -169,15 +169,15 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; translator.vhd                   ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Ex_3/translator.vhd  ;         ;
-; LED_pack.vhd                     ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Ex_3/LED_pack.vhd    ;         ;
-; LED_Display.vhd                  ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Ex_3/LED_Display.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; translator.vhd                   ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/translator.vhd  ;         ;
+; LED_pack.vhd                     ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/LED_pack.vhd    ;         ;
+; LED_Display.vhd                  ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/LED_Display.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -329,7 +329,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Oct 21 22:45:29 2020
+    Info: Processing started: Fri Oct 30 17:23:53 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LED_Display -c LED_Display
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file translator.vhd
@@ -349,14 +349,14 @@ Warning (10631): VHDL Process Statement warning at LED_Display.vhd(75): inferrin
 Warning (10631): VHDL Process Statement warning at LED_Display.vhd(75): inferring latch(es) for signal or variable "LED5_data_dis", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at LED_Display.vhd(75): inferring latch(es) for signal or variable "LED6_data_dis", which holds its previous value in one or more paths through the process
 Warning (10631): VHDL Process Statement warning at LED_Display.vhd(75): inferring latch(es) for signal or variable "LED7_data_dis", which holds its previous value in one or more paths through the process
-Warning (10492): VHDL Process Statement warning at LED_Display.vhd(111): signal "LED0_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at LED_Display.vhd(113): signal "LED1_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at LED_Display.vhd(115): signal "LED2_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at LED_Display.vhd(117): signal "LED3_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at LED_Display.vhd(119): signal "LED4_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at LED_Display.vhd(121): signal "LED5_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at LED_Display.vhd(123): signal "LED6_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at LED_Display.vhd(125): signal "LED7_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_Display.vhd(113): signal "LED0_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_Display.vhd(115): signal "LED1_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_Display.vhd(117): signal "LED2_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_Display.vhd(119): signal "LED3_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_Display.vhd(121): signal "LED4_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_Display.vhd(123): signal "LED5_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_Display.vhd(125): signal "LED6_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_Display.vhd(127): signal "LED7_data_dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (10041): Inferred latch for "LED7_data_dis[0]" at LED_Display.vhd(75)
 Info (10041): Inferred latch for "LED7_data_dis[1]" at LED_Display.vhd(75)
 Info (10041): Inferred latch for "LED7_data_dis[2]" at LED_Display.vhd(75)
@@ -424,9 +424,9 @@ Info (21057): Implemented 129 device resources after synthesis - the final resou
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 103 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4699 megabytes
-    Info: Processing ended: Wed Oct 21 22:45:31 2020
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4704 megabytes
+    Info: Processing ended: Fri Oct 30 17:23:56 2020
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
