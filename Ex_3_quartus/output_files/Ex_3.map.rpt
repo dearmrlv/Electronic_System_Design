@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ex_3
-Sun Nov 01 13:19:23 2020
+Sun Nov 01 13:49:39 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -42,7 +42,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                           ;
 +-------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status         ; Successful - Sun Nov 01 13:19:23 2020            ;
+; Analysis & Synthesis Status         ; Successful - Sun Nov 01 13:49:39 2020            ;
 ; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                       ; Ex_3                                             ;
 ; Top-level Entity Name               ; LED_TOP                                          ;
@@ -222,8 +222,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+----------------------------------------+
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
+; LED_STR:s0|LED_data_out[0]            ; Stuck at VCC due to stuck port data_in ;
 ; LED_STR:s0|LED_data_out[2..7]         ; Stuck at GND due to stuck port data_in ;
-; LED_STR:s0|LED_data_out[0,1]          ; Stuck at VCC due to stuck port data_in ;
+; LED_STR:s0|LED_data_out[1]            ; Stuck at VCC due to stuck port data_in ;
 ; Total Number of Removed Registers = 8 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
@@ -258,7 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sun Nov 01 13:19:21 2020
+    Info: Processing started: Sun Nov 01 13:49:37 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ex_3 -c Ex_3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file codes/translator.vhd
@@ -307,7 +308,7 @@ Info (21057): Implemented 38 device resources after synthesis - the final resour
     Info (21061): Implemented 11 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
     Info: Peak virtual memory: 4699 megabytes
-    Info: Processing ended: Sun Nov 01 13:19:23 2020
+    Info: Processing ended: Sun Nov 01 13:49:39 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

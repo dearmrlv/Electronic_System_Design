@@ -63,28 +63,28 @@ begin
                 LED_array(5) <= DIS_5 & '1';
                 LED_array(6) <= DIS_6 & '1';
                 LED_array(7) <= DIS_7 & '1';
-            end if;
-        else
-            if (clk'event and clk = '1') then
-					if (latch_en = '1') then   -- add a Bubble
-						case (LED_sel) is
-							 when LED0   =>  LED_array(0) <= LED_data_in;
-							 when LED1   =>  LED_array(1) <= LED_data_in;
-							 when LED2   =>  LED_array(2) <= LED_data_in;
-							 when LED3   =>  LED_array(3) <= LED_data_in;
-							 when LED4   =>  LED_array(4) <= LED_data_in;
-							 when LED5   =>  LED_array(5) <= LED_data_in;
-							 when LED6   =>  LED_array(6) <= LED_data_in;
-							 when LED7   =>  LED_array(7) <= LED_data_in;
-							 when others =>  LED_array(0) <= DIS_e & '0';    -- data form: "e."
-												  LED_array(1) <= DIS_e & '0';
-												  LED_array(2) <= DIS_e & '0';
-												  LED_array(3) <= DIS_e & '0';
-												  LED_array(4) <= DIS_e & '0';
-												  LED_array(5) <= DIS_e & '0';
-												  LED_array(6) <= DIS_e & '0';
-												  LED_array(7) <= DIS_e & '0';  
-						end case;
+			  else
+					if (clk'event and clk = '1') then
+						if (latch_en = '1') then   -- add a Bubble
+							case (LED_sel) is
+								 when LED0   =>  LED_array(0) <= LED_data_in;
+								 when LED1   =>  LED_array(1) <= LED_data_in;
+								 when LED2   =>  LED_array(2) <= LED_data_in;
+								 when LED3   =>  LED_array(3) <= LED_data_in;
+								 when LED4   =>  LED_array(4) <= LED_data_in;
+								 when LED5   =>  LED_array(5) <= LED_data_in;
+								 when LED6   =>  LED_array(6) <= LED_data_in;
+								 when LED7   =>  LED_array(7) <= LED_data_in;
+								 when others =>  LED_array(0) <= DIS_e & '0';    -- data form: "e."
+													  LED_array(1) <= DIS_e & '0';
+													  LED_array(2) <= DIS_e & '0';
+													  LED_array(3) <= DIS_e & '0';
+													  LED_array(4) <= DIS_e & '0';
+													  LED_array(5) <= DIS_e & '0';
+													  LED_array(6) <= DIS_e & '0';
+													  LED_array(7) <= DIS_e & '0';  
+							end case;
+						end if;
 					end if;
 				end if;
         end if;

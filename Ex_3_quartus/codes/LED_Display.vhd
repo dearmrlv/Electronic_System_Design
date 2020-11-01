@@ -57,10 +57,10 @@ begin
             if (rst_n = '0') then
                 cnt <= LED0;
             elsif (clk'event and clk = '1') then
-                    data_sel <= cnt;
-                if (clk'event and clk = '1') then
-                    cnt <= cnt + 1;
-                end if;
+					data_sel <= cnt;
+					if (clk'event and clk = '1') then
+						cnt <= cnt + 1;
+					end if;
             end if;
     end process;
 ------------------------------------------
