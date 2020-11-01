@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov  1 09:54:33 2020
+# Process ID: 10516
+# Current directory: C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4104 C:\Users\Administrator\Desktop\VHDL_projects\Codes\Electronic_System_Design\Ex_3_vivado\Ex_3.xpr
+# Log file: C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 691.699 ; gain = 59.395
+update_compile_order -fileset sources_1
+close [ open C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_TOP.vhd w ]
+add_files C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_TOP.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LED_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj LED_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_Display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LED_Display'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_STR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LED_STR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LED_TOP'
+ERROR: [VRFC 10-719] formal port/generic <data_sel> is not declared in <led_display> [C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_TOP.vhd:86]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_TOP.vhd:48]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_TOP.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 754.477 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LED_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj LED_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_Display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LED_Display'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_STR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LED_STR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LED_TOP'
+ERROR: [VRFC 10-719] formal port/generic <data_sel> is not declared in <led_display> [C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_TOP.vhd:86]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_TOP.vhd:48]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.srcs/sources_1/new/LED_TOP.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_vivado/Ex_3.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_project
+create_project project_1 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3 -part xc7a12ticsg325-1L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2019.1/data/ip'.
+add_files -norecurse {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/LED_STR.vhd C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/LED_Display.vhd C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/LED_pack.vhd C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/LED_TOP.vhd C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/translator.vhd}
+import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/LED_tb.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LED_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj LED_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.srcs/sources_1/imports/Ex_3/LED_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.srcs/sources_1/imports/Ex_3/LED_Display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LED_Display'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.srcs/sources_1/imports/Ex_3/LED_STR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LED_STR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.srcs/sources_1/imports/Ex_3/LED_TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LED_TOP'
+ERROR: [VRFC 10-719] formal port/generic <data_sel> is not declared in <led_display> [C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.srcs/sources_1/imports/Ex_3/LED_TOP.vhd:86]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.srcs/sources_1/imports/Ex_3/LED_TOP.vhd:48]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.srcs/sources_1/imports/Ex_3/LED_TOP.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 4
+[Sun Nov  1 12:28:44 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3/project_1.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 12:29:46 2020...

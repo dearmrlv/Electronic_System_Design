@@ -64,7 +64,7 @@ begin
             end if;
     end process;
 ------------------------------------------
-    DISPLAY: process(cnt, LED_data_in)
+    DISPLAY: process(cnt)
         begin
             case (cnt) is
                 when LED0   =>  data_display <= LED_data_in;
