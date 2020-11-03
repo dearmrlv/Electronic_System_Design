@@ -1,0 +1,32 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 2020/11/01 20:23:16
+-- Design Name: 
+-- Module Name: RowScan - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- read to scan
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+package KeyBoardPack is
+
+constant OUT_WIDTH 	: integer 	:= 4;
+constant CLK_PERIOD 	: time 		:= 20 ns;	-- 50 MHz
+
+constant COUNTER_WIDTH	: integer	:= 10;			-- Counter width
+constant CLK_DIV_NUM		: integer	:= 1000;		-- divide into 1/100 frequency
+
+end package;

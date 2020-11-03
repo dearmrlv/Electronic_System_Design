@@ -1,5 +1,8 @@
 |Ex_2_TOP
 clk => ClkDivider:CD0.clk_in
+clk => SeqGenerator0:SG0.clk
+clk => SeqGenerator1:SG1.clk
+clk => SeqDetector:SD0.clk
 rst_n => ClkDivider:CD0.rst_n
 rst_n => ClkDivider:CD1.rst_n
 rst_n => SeqGenerator0:SG0.rst_n

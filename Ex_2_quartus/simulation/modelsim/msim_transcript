@@ -26,25 +26,25 @@
 # Modifying modelsim.ini
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_syn_attributes.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:42 on Oct 27,2020
+# Start time: 17:27:57 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_syn_attributes.vhd 
 # -- Loading package STANDARD
 # -- Compiling package altera_syn_attributes
-# End time: 10:47:43 on Oct 27,2020, Elapsed time: 0:00:01
+# End time: 17:27:57 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_standard_functions.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:43 on Oct 27,2020
+# Start time: 17:27:57 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_standard_functions.vhd 
 # -- Loading package STANDARD
 # -- Compiling package altera_standard_functions
 # -- Compiling package body altera_standard_functions
 # -- Loading package altera_standard_functions
-# End time: 10:47:43 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:27:58 on Nov 01,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/alt_dspbuilder_package.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:43 on Oct 27,2020
+# Start time: 17:27:58 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/alt_dspbuilder_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -53,11 +53,11 @@
 # -- Compiling package alt_dspbuilder_package
 # -- Compiling package body alt_dspbuilder_package
 # -- Loading package alt_dspbuilder_package
-# End time: 10:47:43 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:27:58 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_europa_support_lib.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:43 on Oct 27,2020
+# Start time: 17:27:58 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_europa_support_lib.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -68,11 +68,11 @@
 # -- Compiling package altera_europa_support_lib
 # -- Compiling package body altera_europa_support_lib
 # -- Loading package altera_europa_support_lib
-# End time: 10:47:43 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:27:58 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_primitives_components.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:43 on Oct 27,2020
+# Start time: 17:27:58 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_primitives_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -82,11 +82,11 @@
 # -- Compiling package dffeas_pack
 # -- Loading package dffeas_pack
 # -- Compiling package altera_primitives_components
-# End time: 10:47:44 on Oct 27,2020, Elapsed time: 0:00:01
+# End time: 17:27:59 on Nov 01,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_primitives.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:44 on Oct 27,2020
+# Start time: 17:27:59 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work altera d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_primitives.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -174,7 +174,7 @@
 # -- Compiling architecture BEHAVIOR of alt_bidir_diff
 # -- Compiling entity alt_bidir_buf
 # -- Compiling architecture BEHAVIOR of alt_bidir_buf
-# End time: 10:47:45 on Oct 27,2020, Elapsed time: 0:00:01
+# End time: 17:28:00 on Nov 01,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/lpm
@@ -185,17 +185,17 @@
 # Modifying modelsim.ini
 # vcom -93 -work lpm {d:/softwares/quaturs/install/quartus/eda/sim_lib/220pack.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:45 on Oct 27,2020
+# Start time: 17:28:01 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work lpm d:/softwares/quaturs/install/quartus/eda/sim_lib/220pack.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package LPM_COMPONENTS
-# End time: 10:47:46 on Oct 27,2020, Elapsed time: 0:00:01
+# End time: 17:28:01 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work lpm {d:/softwares/quaturs/install/quartus/eda/sim_lib/220model.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:46 on Oct 27,2020
+# Start time: 17:28:01 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work lpm d:/softwares/quaturs/install/quartus/eda/sim_lib/220model.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -291,7 +291,7 @@
 # -- Compiling architecture LPM_SYN of LPM_OUTpad
 # -- Compiling entity LPM_BIpad
 # -- Compiling architecture LPM_SYN of LPM_BIpad
-# End time: 10:47:47 on Oct 27,2020, Elapsed time: 0:00:01
+# End time: 17:28:03 on Nov 01,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/sgate
@@ -302,7 +302,7 @@
 # Modifying modelsim.ini
 # vcom -93 -work sgate {d:/softwares/quaturs/install/quartus/eda/sim_lib/sgate_pack.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:47 on Oct 27,2020
+# Start time: 17:28:03 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work sgate d:/softwares/quaturs/install/quartus/eda/sim_lib/sgate_pack.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -310,11 +310,11 @@
 # -- Compiling package sgate_pack
 # -- Compiling package body sgate_pack
 # -- Loading package sgate_pack
-# End time: 10:47:48 on Oct 27,2020, Elapsed time: 0:00:01
+# End time: 17:28:04 on Nov 01,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work sgate {d:/softwares/quaturs/install/quartus/eda/sim_lib/sgate.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:48 on Oct 27,2020
+# Start time: 17:28:04 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work sgate d:/softwares/quaturs/install/quartus/eda/sim_lib/sgate.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -364,7 +364,7 @@
 # -- Compiling architecture sim_arch of oper_bus_mux
 # -- Compiling entity oper_latch
 # -- Compiling architecture sim_arch of oper_latch
-# End time: 10:47:48 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:28:05 on Nov 01,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/altera_mf
@@ -375,17 +375,17 @@
 # Modifying modelsim.ini
 # vcom -93 -work altera_mf {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_mf_components.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:49 on Oct 27,2020
+# Start time: 17:28:05 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work altera_mf d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_mf_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package altera_mf_components
-# End time: 10:47:49 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:28:06 on Nov 01,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work altera_mf {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_mf.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:49 on Oct 27,2020
+# Start time: 17:28:06 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work altera_mf d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_mf.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -622,7 +622,7 @@
 # -- Compiling architecture sim_sld_virtual_jtag_basic of sld_virtual_jtag_basic
 # -- Compiling entity altsource_probe
 # -- Compiling architecture sim_altsource_probe of altsource_probe
-# End time: 10:47:52 on Oct 27,2020, Elapsed time: 0:00:03
+# End time: 17:28:10 on Nov 01,2020, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/altera_lnsim
@@ -633,7 +633,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim {d:/softwares/quaturs/install/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv}
 # Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:52 on Oct 27,2020
+# Start time: 17:28:11 on Nov 01,2020
 # vlog -reportprogress 300 -sv -work altera_lnsim d:/softwares/quaturs/install/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -1322,17 +1322,17 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 10:47:55 on Oct 27,2020, Elapsed time: 0:00:03
+# End time: 17:28:16 on Nov 01,2020, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 685
 # vcom -93 -work altera_lnsim {d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_lnsim_components.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:55 on Oct 27,2020
+# Start time: 17:28:16 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work altera_lnsim d:/softwares/quaturs/install/quartus/eda/sim_lib/altera_lnsim_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package altera_lnsim_components
-# End time: 10:47:55 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:28:16 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib vhdl_libs/cyclonev
@@ -1343,15 +1343,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev {d:/softwares/quaturs/install/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:56 on Oct 27,2020
+# Start time: 17:28:17 on Nov 01,2020
 # vlog -reportprogress 300 -vlog01compat -work cyclonev d:/softwares/quaturs/install/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 10:47:59 on Oct 27,2020, Elapsed time: 0:00:03
+# End time: 17:28:21 on Nov 01,2020, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0
 # vcom -93 -work cyclonev {d:/softwares/quaturs/install/quartus/eda/sim_lib/cyclonev_atoms.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:47:59 on Oct 27,2020
+# Start time: 17:28:21 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work cyclonev d:/softwares/quaturs/install/quartus/eda/sim_lib/cyclonev_atoms.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1491,11 +1491,11 @@
 # -- Compiling architecture behavior of cyclonev_ir_fifo_userdes
 # -- Compiling entity cyclonev_oscillator
 # -- Compiling architecture behavior of cyclonev_oscillator
-# End time: 10:48:01 on Oct 27,2020, Elapsed time: 0:00:02
+# End time: 17:28:23 on Nov 01,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 1
 # vcom -93 -work cyclonev {d:/softwares/quaturs/install/quartus/eda/sim_lib/cyclonev_components.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:48:01 on Oct 27,2020
+# Start time: 17:28:23 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work cyclonev d:/softwares/quaturs/install/quartus/eda/sim_lib/cyclonev_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1504,7 +1504,7 @@
 # -- Loading package VITAL_Primitives
 # -- Loading package cyclonev_atom_pack
 # -- Compiling package cyclonev_components
-# End time: 10:48:01 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:28:23 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -1518,39 +1518,50 @@
 # 
 # vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:48:02 on Oct 27,2020
+# Start time: 17:28:24 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SeqGenerator0
 # -- Compiling architecture arcSeqGen0 of SeqGenerator0
-# End time: 10:48:02 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:28:24 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator1.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:48:02 on Oct 27,2020
+# Start time: 17:28:24 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SeqGenerator1
 # -- Compiling architecture arcSeqGen1 of SeqGenerator1
-# End time: 10:48:02 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:28:24 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/myPackEx_2.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:48:02 on Oct 27,2020
+# Start time: 17:28:25 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/myPackEx_2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package myPackEx_2
-# End time: 10:48:02 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:28:25 on Nov 01,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/output_files/SeqSel.vhd}
+# Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 17:28:25 on Nov 01,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/output_files/SeqSel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SeqSel
+# -- Compiling architecture A1 of SeqSel
+# End time: 17:28:25 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqDetector.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:48:02 on Oct 27,2020
+# Start time: 17:28:25 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqDetector.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1560,11 +1571,11 @@
 # -- Loading package myPackEx_2
 # -- Compiling entity SeqDetector
 # -- Compiling architecture arcSeqDet of SeqDetector
-# End time: 10:48:02 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:28:26 on Nov 01,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TOP.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:48:02 on Oct 27,2020
+# Start time: 17:28:26 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TOP.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1572,11 +1583,11 @@
 # -- Loading package myPackEx_2
 # -- Compiling entity Ex_2_TOP
 # -- Compiling architecture arcTOP of Ex_2_TOP
-# End time: 10:48:03 on Oct 27,2020, Elapsed time: 0:00:01
+# End time: 17:28:26 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/ClkDivider.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:48:03 on Oct 27,2020
+# Start time: 17:28:26 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/ClkDivider.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1586,12 +1597,12 @@
 # -- Loading package myPackEx_2
 # -- Compiling entity ClkDivider
 # -- Compiling architecture arcDivier of ClkDivider
-# End time: 10:48:03 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:28:26 on Nov 01,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TB.vhd}
 # Model Technology ModelSim SE-64 vcom 10.7 Compiler 2017.12 Dec  7 2017
-# Start time: 10:48:03 on Oct 27,2020
+# Start time: 17:28:26 on Nov 01,2020
 # vcom -reportprogress 300 -93 -work work C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1601,12 +1612,12 @@
 # -- Loading package myPackEx_2
 # -- Compiling entity Ex_2_TB
 # -- Compiling architecture arcTB of Ex_2_TB
-# End time: 10:48:03 on Oct 27,2020, Elapsed time: 0:00:00
+# End time: 17:28:27 on Nov 01,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Ex_2_TB
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" Ex_2_TB 
-# Start time: 10:48:03 on Oct 27,2020
+# Start time: 17:28:27 on Nov 01,2020
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-143) Recognized 1 FSM in architecture body "SeqDetector(arcSeqDet)".
 # ** Note: (vopt-143) Recognized 1 FSM in architecture body "SeqGenerator1(arcSeqGen1)".
@@ -1623,6 +1634,7 @@
 # Loading work.seqgenerator0(arcseqgen0)#1
 # Loading work.seqgenerator1(arcseqgen1)#1
 # Loading work.seqdetector(arcseqdet)#1
+# Loading work.seqsel(a1)#1
 # 
 # add wave *
 # view structure
@@ -1636,17 +1648,15 @@
 #    Time: 0 ps  Iteration: 1  Instance: /ex_2_tb/Ex_2/CD0
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 1  Instance: /ex_2_tb/Ex_2/CD0
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ex_2_tb/Ex_2/CD1
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ex_2_tb/Ex_2/CD1
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ex_2_tb/Ex_2/CD1
 # Break key hit
-# Break in Process STATE_MEMORY at C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqDetector.vhd line 35
+# Break in Process OUTPUT_LOGIC at C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator1.vhd line 47
 add wave -position insertpoint  \
-sim:/ex_2_tb/Ex_2/CD1/clk_in \
-sim:/ex_2_tb/Ex_2/CD1/clk_out
+sim:/ex_2_tb/Ex_2/seqShow \
+sim:/ex_2_tb/Ex_2/seq0 \
+sim:/ex_2_tb/Ex_2/seq1 \
+sim:/ex_2_tb/Ex_2/seq_sel \
+sim:/ex_2_tb/Ex_2/clk_500k \
+sim:/ex_2_tb/Ex_2/clk_5k
 restart
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 run
@@ -1656,11 +1666,6 @@ run
 #    Time: 0 ps  Iteration: 1  Instance: /ex_2_tb/Ex_2/CD0
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 1  Instance: /ex_2_tb/Ex_2/CD0
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ex_2_tb/Ex_2/CD1
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ex_2_tb/Ex_2/CD1
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ex_2_tb/Ex_2/CD1
-# End time: 10:49:10 on Oct 27,2020, Elapsed time: 0:01:07
-# Errors: 0, Warnings: 6
+run
+# End time: 18:12:02 on Nov 01,2020, Elapsed time: 0:43:35
+# Errors: 0, Warnings: 3

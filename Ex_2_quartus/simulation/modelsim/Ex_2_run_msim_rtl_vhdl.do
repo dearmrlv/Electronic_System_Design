@@ -47,6 +47,7 @@ vmap work rtl_work
 vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd}
 vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator1.vhd}
 vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/myPackEx_2.vhd}
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/output_files/SeqSel.vhd}
 vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqDetector.vhd}
 vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TOP.vhd}
 vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/ClkDivider.vhd}

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_vivado/Ex_4.srcs/sources_1/new/ColScan.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ColScan'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_vivado/Ex_4.srcs/sim_1/imports/codes/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'
+ERROR: [VRFC 10-654] expected an architecture identifier in index [C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_vivado/Ex_4.srcs/sim_1/imports/codes/top_tb.vhd:25]
+ERROR: [VRFC 10-3353] formal port 'clk' has no actual or default value [C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_vivado/Ex_4.srcs/sim_1/imports/codes/top_tb.vhd:25]
+ERROR: [VRFC 10-3782] unit 'arc_top_tb' ignored due to previous errors [C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_vivado/Ex_4.srcs/sim_1/imports/codes/top_tb.vhd:11]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_vivado/Ex_4.srcs/sim_1/imports/codes/top_tb.vhd' ignored due to errors

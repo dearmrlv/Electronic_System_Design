@@ -59,9 +59,9 @@ architecture arcTOP of Ex_2_TOP is
 	begin
 		CD0: 	ClkDivider	  port map (rst_n=>rst_n, clk_in=>clk, clk_out=>clk_500k);
 		CD1: 	ClkDivider	  port map (rst_n=>rst_n, clk_in=>clk_500k, clk_out=>clk_5k);
-		SG0:	SeqGenerator0 port map (clk=>clk_5k, rst_n=>rst_n, output=>seq0);
-		SG1: 	SeqGenerator1 port map (clk=>clk_5k, rst_n=>rst_n, output=>seq1);
-		SD0: 	SeqDetector	  port map (clk=>clk_5k, rst_n=>rst_n, SeqIn=>seq_sel, SeqNum=>SeqNum);
+		SG0:	SeqGenerator0 port map (clk=>clk, rst_n=>rst_n, output=>seq0);
+		SG1: 	SeqGenerator1 port map (clk=>clk, rst_n=>rst_n, output=>seq1);
+		SD0: 	SeqDetector	  port map (clk=>clk, rst_n=>rst_n, SeqIn=>seq_sel, SeqNum=>SeqNum);
 		SS0:	SeqSel		  port map (seq0=>seq0, seq1=>seq1, rst_n=>rst_n, sel=>sel, seq_sel=>seq_sel);
 		
 --		SEQUEBCE_SELECT: process(sel, rst_n, seq0, seq1)

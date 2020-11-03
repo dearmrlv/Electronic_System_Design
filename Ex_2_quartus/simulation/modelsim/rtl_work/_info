@@ -9,17 +9,17 @@ z2
 cModel Technology
 Z0 dC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/simulation/modelsim
 T_opt
-!s110 1603766885
-VazBTnQ]nQX@lD3OJOXRg?2
+!s110 1604222910
+Vfo3ICjgbAROS5Z[a5Nh131
 04 7 5 work ex_2_tb arctb 1
-=1-48ba4e4d1dc6-5f978a64-28a-97c
+=1-48ba4e4d1dc6-5f9e7fbc-2c8-2d68
 o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work +acc
 tCvgOpt 0
 n@_opt
 OL;O;10.7;67
 Eclkdivider
-Z1 w1603766839
-Z2 DPx4 work 10 mypackex_2 0 22 TkYbLDhHo190D7bIYDnM81
+Z1 w1603795627
+Z2 DPx4 work 10 mypackex_2 0 22 VbBDkKTLNB7bbme1]JJRA0
 Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -33,9 +33,9 @@ VmLo`OB?@Y8?i3]j0`VkMD2
 !s100 4X5RWBPWS3bRc;5f@[9Cl2
 Z9 OL;C;10.7;67
 31
-Z10 !s110 1603766883
+Z10 !s110 1604222906
 !i10b 1
-Z11 !s108 1603766883.000000
+Z11 !s108 1604222906.000000
 Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/ClkDivider.vhd|
 Z13 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/ClkDivider.vhd|
 !i113 0
@@ -50,8 +50,8 @@ R6
 DEx4 work 10 clkdivider 0 22 mLo`OB?@Y8?i3]j0`VkMD2
 l24
 L19
-VBMHjR[MF9_ODWSgf4>Uk]3
-!s100 8cNcemCB5g3<=lD0Aa18_0
+V=YNkl6oZmBAiP>Eh0E<^m1
+!s100 kUXeMNJOS?190AWhK<1Qn3
 R9
 31
 R10
@@ -63,7 +63,7 @@ R13
 R14
 R15
 Eex_2_tb
-Z16 w1603116924
+Z16 w1603713696
 R2
 R3
 R4
@@ -108,7 +108,7 @@ R20
 R14
 R15
 Eex_2_top
-Z21 w1603766449
+Z21 w1604222826
 R2
 R5
 R6
@@ -117,15 +117,15 @@ Z22 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design
 Z23 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TOP.vhd
 l0
 L11
-VXAB_FTHGT=b>YQK1=4m_j2
-!s100 R4RgGcI]iDBmBE_:TIm3P0
+VI8UAEa1@^lb5SSg48E@Hl1
+!s100 MdQn9Nl:1ooJK=673G=MV1
 R9
 31
 R10
 !i10b 1
-Z24 !s108 1603766882.000000
-Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TOP.vhd|
-Z26 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TOP.vhd|
+R11
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TOP.vhd|
+Z25 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/Ex_2_TOP.vhd|
 !i113 0
 R14
 R15
@@ -133,44 +133,44 @@ Aarctop
 R2
 R5
 R6
-DEx4 work 8 ex_2_top 0 22 XAB_FTHGT=b>YQK1=4m_j2
-l50
-L19
-VD:Sacl;FHchS6[Jg5PaOC1
-!s100 zLjm?ZiQlP[JzD_hHanCJ0
+DEx4 work 8 ex_2_top 0 22 I8UAEa1@^lb5SSg48E@Hl1
+l59
+L20
+VUO4iT@U4WKP<>f[Wg:0>l2
+!s100 Qbo0F8aPZ4Y3kKdJ@7FKY1
 R9
 31
 R10
 !i10b 1
+R11
 R24
 R25
-R26
 !i113 0
 R14
 R15
 Pmypackex_2
 R5
 R6
-w1603766699
+w1603795870
 R0
 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/myPackEx_2.vhd
 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/myPackEx_2.vhd
 l0
 L10
-VTkYbLDhHo190D7bIYDnM81
-!s100 oI[NHe8Ea3ZQV^JQz??260
+VVbBDkKTLNB7bbme1]JJRA0
+!s100 26N3TW<NiDe8BGUG>V>1C1
 R9
 31
-Z27 !s110 1603766882
+Z26 !s110 1604222905
 !i10b 1
-R24
+Z27 !s108 1604222905.000000
 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/myPackEx_2.vhd|
 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/myPackEx_2.vhd|
 !i113 0
 R14
 R15
 Eseqdetector
-Z28 w1603763950
+Z28 w1603796421
 R2
 R3
 R4
@@ -185,9 +185,9 @@ V4ROE2HigO1M:oCFgK_^eW2
 !s100 FU7]G?ojTa=c5DULVhdQ00
 R9
 31
-R27
+R10
 !i10b 1
-R24
+R27
 Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqDetector.vhd|
 Z32 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqDetector.vhd|
 !i113 0
@@ -202,36 +202,36 @@ R6
 DEx4 work 11 seqdetector 0 22 4ROE2HigO1M:oCFgK_^eW2
 l29
 L22
-V^aD4kVmz1nY>3U<6K4>061
-!s100 2^oR]NUIRC>a[W^m?CnAI1
+VMgS>^07Ie=egU5`29j:9?0
+!s100 =o@>?4nN2f;efR]GUQ9lS3
 R9
 31
-R27
+R10
 !i10b 1
-R24
+R27
 R31
 R32
 !i113 0
 R14
 R15
 Eseqgenerator0
-Z33 w1603116584
+R16
 R5
 R6
 R0
-Z34 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd
-Z35 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd
+Z33 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd
+Z34 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd
 l0
 L9
 VLS90>^LPUNVbO[lbV65Wz3
 !s100 5Fa]?TC7^kA@@TDUz366W2
 R9
 31
-R27
+Z35 !s110 1604222904
 !i10b 1
-R24
-Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd|
-Z37 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd|
+Z36 !s108 1604222904.000000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd|
+Z38 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator0.vhd|
 !i113 0
 R14
 R15
@@ -245,16 +245,16 @@ Vl04i=hdkh_kGT<;9G9SzT3
 !s100 >6hTR_MXU^76?5jlJ^jbZ1
 R9
 31
-R27
+R35
 !i10b 1
-R24
 R36
 R37
+R38
 !i113 0
 R14
 R15
 Eseqgenerator1
-Z38 w1603116587
+R16
 R5
 R6
 R0
@@ -266,9 +266,9 @@ V]?o2IRF8TMoh`ME:=S;nX0
 !s100 Lha5ezX6f@>>A2SHmfWdN0
 R9
 31
-R27
+R35
 !i10b 1
-R24
+R36
 Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator1.vhd|
 Z42 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/SeqGenerator1.vhd|
 !i113 0
@@ -284,11 +284,50 @@ VQni8@RbnzWQi>6]e68DHk0
 !s100 nTFdkB]_7T1_C8n59E1nN3
 R9
 31
-R27
+R35
 !i10b 1
-R24
+R36
 R41
 R42
+!i113 0
+R14
+R15
+Eseqsel
+Z43 w1603797636
+R5
+R6
+R0
+Z44 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/output_files/SeqSel.vhd
+Z45 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/output_files/SeqSel.vhd
+l0
+L5
+V<[hfOJh[m^31>PJQGC@5:0
+!s100 :hg00`8TdBn9>gh[7Ro1n3
+R9
+31
+R26
+!i10b 1
+R27
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/output_files/SeqSel.vhd|
+Z47 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_2_quartus/output_files/SeqSel.vhd|
+!i113 0
+R14
+R15
+Aa1
+R5
+R6
+DEx4 work 6 seqsel 0 22 <[hfOJh[m^31>PJQGC@5:0
+l15
+L13
+VlBIb9_m^e>oW>TPTdgR3N3
+!s100 <]JHWb^LYISYTNc[4goAg1
+R9
+31
+R26
+!i10b 1
+R27
+R46
+R47
 !i113 0
 R14
 R15

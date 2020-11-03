@@ -48,44 +48,98 @@ end LED_Display;
 
 architecture arcDisplay of LED_Display is
 
-signal cnt : STD_LOGIC_VECTOR(2 downto 0);
 
+type ST_type is (S0, S1, S2, S3, S4, S5, S6, S7);
+signal CrST, NxST: ST_type;	-- Current State and Next State
 begin
-------------------------------------------
-    COUNTER: process(clk, rst_n)
-        begin
-            if (rst_n = '0') then
-                cnt <= LED0;
-            elsif (clk'event and clk = '1') then
-					data_sel <= cnt;
-					if (clk'event and clk = '1') then
-						cnt <= cnt + 1;
-					end if;
-            end if;
-    end process;
-------------------------------------------
-    DISPLAY: process(cnt, LED_data_in)
-        begin
-            case (cnt) is
-                when LED0   =>  data_display <= LED_data_in;
-                                LED_dis_sel <= LED_DIS0;
-                when LED1   =>  data_display <= LED_data_in;
-                                LED_dis_sel <= LED_DIS1;
-                when LED2   =>  data_display <= LED_data_in;
-                                LED_dis_sel <= LED_DIS2;
-                when LED3   =>  data_display <= LED_data_in;
-                                LED_dis_sel <= LED_DIS3;
-                when LED4   =>  data_display <= LED_data_in;
-                                LED_dis_sel <= LED_DIS4;
-                when LED5   =>  data_display <= LED_data_in;
-                                LED_dis_sel <= LED_DIS5;
-                when LED6   =>  data_display <= LED_data_in;
-                                LED_dis_sel <= LED_DIS6;
-                when LED7   =>  data_display <= LED_data_in;
-                                LED_dis_sel <= LED_DIS7;
-                when others =>  data_display <= DIS_e & '0';
-                                LED_dis_sel <= "11111111";  -- light all the LED to show errors
-            end case;
-    end process;
+-----------------------------------------------
+	STATE_MEMORY: process (clk, rst_n)
+		begin
+			if (rst_n = '0') then
+				CrST <= S0;
+			elsif (clk'event and clk = '0') then
+				CrST <= NxST;
+			end if;
+		end process;
+-----------------------------------------------
+	NEXT_STATE_LOGIC : process (CrST)
+		begin
+			case (CrST) is
+				when S0		=> NxST <= S1;
+				when S1		=> NxST <= S2;
+				when S2		=> NxST <= S3;
+				when S3		=> NxST <= S4;
+				when S4		=> NxST <= S5;
+				when S5		=> NxST <= S6;
+				when S6		=> NxST <= S7;
+				when S7		=> NxST <= S0;
+				when others => NxST <= S0;
+			end case;
+	end process;
+-----------------------------------------------
+	OUTPUT_LOGIC: process (CrST, NxST)
+		begin
+		    case (NxST) is
+		        when S0     =>  data_sel <= LED0;
+		        when S1     =>  data_sel <= LED1;
+		        when S2     =>  data_sel <= LED2;
+		        when S3     =>  data_sel <= LED3;
+		        when S4     =>  data_sel <= LED4;
+		        when S5     =>  data_sel <= LED5;
+		        when S6     =>  data_sel <= LED6;
+		        when S7     =>  data_sel <= LED7;
+		        when others =>  data_sel <= LED0;
+		    end case;
+			case (CrST) is 
+                when S0		=>  LED_dis_sel <= LED_DIS0;
+                when S1     =>  LED_dis_sel <= LED_DIS1;
+                when S2		=>  LED_dis_sel <= LED_DIS2;
+                when S3     =>  LED_dis_sel <= LED_DIS3;
+                when S4		=>  LED_dis_sel <= LED_DIS4;
+                when S5     =>  LED_dis_sel <= LED_DIS5;
+                when S6		=>  LED_dis_sel <= LED_DIS6;
+                when S7     =>  LED_dis_sel <= LED_DIS7;
+                when others =>  LED_dis_sel <= "11111111";  -- light all the LED to show errors
+			end case;
+			data_display <= LED_data_in;
+	end process;
+
+--Original Version
+--signal cnt : STD_LOGIC_VECTOR(2 downto 0);
+--begin
+--------------------------------------------
+--    COUNTER: process(clk, rst_n)
+--        begin
+--            if (rst_n = '0') then
+--                cnt <= LED0;
+--            elsif (clk'event and clk = '1') then
+--					data_sel <= cnt;
+--                    cnt <= cnt + 1;
+--            end if;
+--    end process;
+--------------------------------------------
+--    DISPLAY: process(cnt, LED_data_in)
+--        begin
+--            case (cnt) is
+--                when LED0   =>  data_display <= LED_data_in;
+--                                LED_dis_sel <= LED_DIS0;
+--                when LED1   =>  data_display <= LED_data_in;
+--                                LED_dis_sel <= LED_DIS1;
+--                when LED2   =>  data_display <= LED_data_in;
+--                                LED_dis_sel <= LED_DIS2;
+--                when LED3   =>  data_display <= LED_data_in;
+--                                LED_dis_sel <= LED_DIS3;
+--                when LED4   =>  data_display <= LED_data_in;
+--                                LED_dis_sel <= LED_DIS4;
+--                when LED5   =>  data_display <= LED_data_in;
+--                                LED_dis_sel <= LED_DIS5;
+--                when LED6   =>  data_display <= LED_data_in;
+--                                LED_dis_sel <= LED_DIS6;
+--                when LED7   =>  data_display <= LED_data_in;
+--                                LED_dis_sel <= LED_DIS7;
+--                when others =>  data_display <= DIS_e & '0';
+--                                LED_dis_sel <= "11111111";  -- light all the LED to show errors
+--            end case;
+--    end process;
 
 end arcDisplay;

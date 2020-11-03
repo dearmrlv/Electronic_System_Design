@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Nov 01 13:49:39 2020
+Analysis & Synthesis Status : Successful - Tue Nov 03 12:54:29 2020
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : Ex_3
 Top-level Entity Name : LED_TOP
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 3
+Total registers : 88
 Total pins : 27
 Total virtual pins : 0
 Total block memory bits : 0

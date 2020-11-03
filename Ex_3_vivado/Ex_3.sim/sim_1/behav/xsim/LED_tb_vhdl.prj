@@ -2,6 +2,8 @@
 vhdl xil_defaultlib  \
 "../../../../Ex_3.srcs/sources_1/new/LED_pack.vhd" \
 "../../../../Ex_3.srcs/sources_1/new/LED_Display.vhd" \
+"../../../../Ex_3.srcs/sources_1/new/LED_STR.vhd" \
+"../../../../Ex_3.srcs/sources_1/new/LED_TOP.vhd" \
 "../../../../Ex_3.srcs/sources_1/new/translator.vhd" \
 "../../../../Ex_3.srcs/sim_1/new/LED_tb.vhd" \
 

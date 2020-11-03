@@ -1,0 +1,46 @@
+--- FPGA Ex_1
+--- Author: Zhengyang Lv
+--- Student ID: PB17061238
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity top_tb is
+end top_tb;
+
+architecture arc_top_tb of top_tb is 
+
+signal clk, rst_n : STD_LOGIC;
+signal tmp : STD_LOGIC_VECTOR(3 downto 0);
+constant CLK_PERIOD : time := 20 ns;
+
+component ColScan is
+    Port ( clk		: in 	STD_LOGIC;
+           rst_n	: in 	STD_LOGIC;
+	   tmp		: out STD_LOGIC_VECTOR(3 downto 0)
+           );
+end component;
+
+begin
+	c0: ColScan port map (clk=>clk, rst_n=>rst_n, tmp=>tmp);
+	CLK_GEN: process
+	begin
+		clk <= '1';
+		wait for CLK_PERIOD/2;
+		clk <= '0';
+		wait for CLK_PERIOD/2;
+	end process;
+	
+	TEST: process
+			begin
+				rst_n <= '1';
+				wait for CLK_PERIOD/2;
+				rst_n <= '0';
+				wait for CLK_PERIOD/2;
+				rst_n <= '1';
+				wait for CLK_PERIOD/2;
+				wait for 1000 ns;
+				wait;
+		end process;
+
+end arc_top_tb;

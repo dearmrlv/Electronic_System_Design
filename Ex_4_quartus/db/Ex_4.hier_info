@@ -1,0 +1,13 @@
+|ColScan
+clk => CrST.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+rst_n => cnt.OUTPUTSELECT
+rst_n => cnt.OUTPUTSELECT
+rst_n => CrST.OUTPUTSELECT
+ScanOut[0] <= ScanOut[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ScanOut[1] <= ScanOut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ScanOut[2] <= ScanOut[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ScanOut[3] <= ScanOut[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

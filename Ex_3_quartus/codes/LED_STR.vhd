@@ -95,9 +95,7 @@ begin
         if (clk'event and clk = '1') then
             if (rst_n = '0') then   -- Synchronous Reset
                LED_data_out <= DIS_0 & '1';
-            end if;
-        else
-            if (clk'event and clk = '1') then
+            else
                 case (data_sel) is
                     when LED0   =>  LED_data_out <= LED_array(0);
                     when LED1   =>  LED_data_out <= LED_array(1);
