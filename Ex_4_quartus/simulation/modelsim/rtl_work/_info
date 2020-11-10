@@ -11,91 +11,124 @@ Z0 dC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/
 T_opt
 !s110 1604240641
 VQSN[SC8;WX0mfB1bz;?n30
-04 6 10 work top_tb arc_top_tb 1
+Z1 04 6 10 work top_tb arc_top_tb 1
 =1-48ba4e4d1dc6-5f9ec501-99-714
-o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work +acc
-tCvgOpt 0
+Z2 o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work +acc
+Z3 tCvgOpt 0
 n@_opt
-OL;O;10.7;67
-Ecolscan
-Z1 w1604240592
-Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z4 OL;O;10.7;67
 R0
-Z6 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/ColScan.vhd
-Z7 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/ColScan.vhd
-l0
-L35
-VIIWzRJ>dIdkOE::ig_U;D3
-!s100 WCZdcPaWJD3<>dmGJJ`AS2
-Z8 OL;C;10.7;67
-31
-Z9 !s110 1604240640
-!i10b 1
-Z10 !s108 1604240640.000000
-Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/ColScan.vhd|
-Z12 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/ColScan.vhd|
-!i113 0
-Z13 o-93 -work work
-Z14 tExplicit 1 CvgOpt 0
-Abehavioral
+T_opt1
+!s110 1604996200
+V;EUFhQaW`F4?gTC:9iSe_3
+R1
+=1-48ba4e4d1dc6-5faa4c67-399-b08
 R2
 R3
+n@_opt1
 R4
-R5
-DEx4 work 7 colscan 0 22 IIWzRJ>dIdkOE::ig_U;D3
-l50
-L42
-VJ[i^fFD8djS^2BX7W>VOj3
-!s100 8aYXeAmV8>V637]hMFN^g2
-R8
-31
-R9
-!i10b 1
-R10
-R11
-R12
-!i113 0
-R13
-R14
-Etop_tb
-Z15 w1604238908
-R4
-R5
+Ecolscan
+Z5 w1604996162
+Z6 DPx4 work 12 keyboardpack 0 22 9QET_zKl]i84]`E?o4lkg0
+Z7 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z8 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 R0
-Z16 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/top_tb.vhd
-Z17 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/top_tb.vhd
+Z11 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/ColScan.vhd
+Z12 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/ColScan.vhd
+l0
+L37
+VedXDR5SMXK7_A;jIMO[GW0
+!s100 0UJRE1J`8MnO63KzW;ljG2
+Z13 OL;C;10.7;67
+31
+Z14 !s110 1604996199
+!i10b 1
+Z15 !s108 1604996199.000000
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/ColScan.vhd|
+Z17 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/ColScan.vhd|
+!i113 0
+Z18 o-93 -work work
+Z19 tExplicit 1 CvgOpt 0
+Abehavioral
+R6
+R7
+R8
+R9
+R10
+DEx4 work 7 colscan 0 22 edXDR5SMXK7_A;jIMO[GW0
+l55
+L45
+Vf35W13RCnofSkYlTh[hBE0
+!s100 2X]8PWA5di6<Q8_a?7BzO0
+R13
+31
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Pkeyboardpack
+R9
+R10
+w1604982546
+R0
+8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/KeyBoardPack.vhd
+FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/KeyBoardPack.vhd
+l0
+L24
+V9QET_zKl]i84]`E?o4lkg0
+!s100 _XF=2:2fW9:82]JeDO4fX1
+R13
+31
+!s110 1604996198
+!i10b 1
+!s108 1604996198.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/KeyBoardPack.vhd|
+!s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/KeyBoardPack.vhd|
+!i113 0
+R18
+R19
+Etop_tb
+Z20 w1604238908
+R9
+R10
+R0
+Z21 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/top_tb.vhd
+Z22 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/top_tb.vhd
 l0
 L8
 VjY`1iYhBm]S@B[cRmO4U;1
 !s100 =FZdQmV1P9E:>gGH68<[P1
-R8
-31
-R9
-!i10b 1
-R10
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/top_tb.vhd|
-Z19 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/top_tb.vhd|
-!i113 0
 R13
+31
 R14
+!i10b 1
+R15
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/top_tb.vhd|
+Z24 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/top_tb.vhd|
+!i113 0
+R18
+R19
 Aarc_top_tb
-R4
-R5
+R9
+R10
 DEx4 work 6 top_tb 0 22 jY`1iYhBm]S@B[cRmO4U;1
 l24
 L11
 V?C`2fUd85Hz3T8nz3AMA>2
 !s100 0<ze69^BRLe?J4iTdMaoP3
-R8
+R13
 31
-R9
+R14
 !i10b 1
-R10
+R15
+R23
+R24
+!i113 0
 R18
 R19
-!i113 0
-R13
-R14

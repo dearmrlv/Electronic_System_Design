@@ -1,5 +1,5 @@
 Flow report for Ex_4
-Sun Nov 01 22:23:17 2020
+Tue Nov 10 17:31:08 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Flow Summary                                                                           ;
 +-------------------------------------+--------------------------------------------------+
-; Flow Status                         ; Successful - Sun Nov 01 22:23:17 2020            ;
+; Flow Status                         ; Successful - Tue Nov 10 17:31:08 2020            ;
 ; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                       ; Ex_4                                             ;
-; Top-level Entity Name               ; ColScan                                          ;
+; Top-level Entity Name               ; KeyBoard_TOP                                     ;
 ; Family                              ; Cyclone V                                        ;
 ; Device                              ; 5CEFA2F23C8                                      ;
 ; Timing Models                       ; Final                                            ;
 ; Logic utilization (in ALMs)         ; N/A                                              ;
-; Total registers                     ; 7                                                ;
-; Total pins                          ; 6                                                ;
+; Total registers                     ; 85                                               ;
+; Total pins                          ; 15                                               ;
 ; Total virtual pins                  ; 0                                                ;
 ; Total block memory bits             ; 0                                                ;
 ; Total DSP Blocks                    ; 0                                                ;
@@ -69,41 +69,41 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/01/2020 22:23:15 ;
+; Start date & time ; 11/10/2020 17:31:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Ex_4                ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                            ;
-+--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
-+--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 79965014793670.160424059515272        ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; top_eb         ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; top_tb         ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; top_tb                                ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim (VHDL)                       ; <None>        ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; codes/top_tb.vhd                      ; --            ; --          ; top_eb         ;
-; EDA_TEST_BENCH_FILE                  ; codes/top_tb.vhd                      ; --            ; --          ; top_tb         ;
-; EDA_TEST_BENCH_MODULE_NAME           ; top_eb                                ; --            ; --          ; top_eb         ;
-; EDA_TEST_BENCH_MODULE_NAME           ; top_tb                                ; --            ; --          ; top_tb         ;
-; EDA_TEST_BENCH_NAME                  ; top_eb                                ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_NAME                  ; top_tb                                ; --            ; --          ; eda_simulation ;
-; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; 16764057                              ; --            ; ColScan     ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; ColScan     ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; ColScan     ; Top            ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; ColScan                               ; Ex_4          ; --          ; --             ;
-+--------------------------------------+---------------------------------------+---------------+-------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++--------------------------------------+---------------------------------------+---------------+--------------+----------------+
+; Assignment Name                      ; Value                                 ; Default Value ; Entity Name  ; Section Id     ;
++--------------------------------------+---------------------------------------+---------------+--------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 79965014793670.160500066609032        ; --            ; --           ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --           ; top_eb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --           ; top_tb         ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; top_tb                                ; --            ; --           ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --           ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (VHDL)                       ; <None>        ; --           ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --           ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; codes/top_tb.vhd                      ; --            ; --           ; top_eb         ;
+; EDA_TEST_BENCH_FILE                  ; codes/top_tb.vhd                      ; --            ; --           ; top_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; top_eb                                ; --            ; --           ; top_eb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; top_tb                                ; --            ; --           ; top_tb         ;
+; EDA_TEST_BENCH_NAME                  ; top_eb                                ; --            ; --           ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; top_tb                                ; --            ; --           ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --           ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --           ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --           ; --             ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; KeyBoard_TOP ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; KeyBoard_TOP ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; KeyBoard_TOP ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --           ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --           ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --           ; --             ;
+; TOP_LEVEL_ENTITY                     ; KeyBoard_TOP                          ; Ex_4          ; --           ; --             ;
++--------------------------------------+---------------------------------------+---------------+--------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -111,7 +111,7 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4697 MB             ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4696 MB             ; 00:00:02                           ;
 ; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 

@@ -44,6 +44,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/KeyBoardPack.vhd}
 vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/ColScan.vhd}
 
 vcom -93 -work work {C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/top_tb.vhd}

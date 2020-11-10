@@ -19,5 +19,5 @@ Sim dir               :  simulation\modelsim
 
 Info: Starting NativeLink simulation with ModelSim software
 Sourced NativeLink script d:/softwares/quaturs/install/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File Ex_4_run_msim_rtl_vhdl.do already exists - backing up current file as Ex_4_run_msim_rtl_vhdl.do.bak6
+Warning: File Ex_4_run_msim_rtl_vhdl.do already exists - backing up current file as Ex_4_run_msim_rtl_vhdl.do.bak11
 Info: Spawning ModelSim Simulation software 

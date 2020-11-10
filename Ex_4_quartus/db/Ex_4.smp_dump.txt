@@ -1,0 +1,7 @@
+
+State Machine - |KeyBoard_TOP|ColScan:CS0|CrST
+Name CrST.S3 CrST.S2 CrST.S1 CrST.S0 
+CrST.S0 0 0 0 0 
+CrST.S1 0 0 1 1 
+CrST.S2 0 1 0 1 
+CrST.S3 1 0 0 1 

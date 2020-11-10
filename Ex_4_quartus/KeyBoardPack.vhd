@@ -24,22 +24,29 @@ use IEEE.STD_LOGIC_1164.all;
 package KeyBoardPack is
 
 -- 4X4 keyBoard
+-- First bit is '1'
+constant KEY_0 : STD_LOGIC_VECTOR := "10000";
+constant KEY_1 : STD_LOGIC_VECTOR := "10001";
+constant KEY_2 : STD_LOGIC_VECTOR := "10010";
+constant KEY_3 : STD_LOGIC_VECTOR := "10011";
+constant KEY_4 : STD_LOGIC_VECTOR := "10100";
+constant KEY_5 : STD_LOGIC_VECTOR := "10101";
+constant KEY_6 : STD_LOGIC_VECTOR := "10110";
+constant KEY_7 : STD_LOGIC_VECTOR := "10111";
+constant KEY_8 : STD_LOGIC_VECTOR := "11000";
+constant KEY_9 : STD_LOGIC_VECTOR := "11001";
+constant KEY_A : STD_LOGIC_VECTOR := "11010";
+constant KEY_B : STD_LOGIC_VECTOR := "11011";
+constant KEY_C : STD_LOGIC_VECTOR := "11100";
+constant KEY_D : STD_LOGIC_VECTOR := "11101";
+constant KEY_asterisk : STD_LOGIC_VECTOR := "11110";		-- *
+constant KEY_pound_sign : STD_LOGIC_VECTOR := "11111";		-- #
 
-constant KEY_0 : STD_LOGIC_VECTOR := "0000";
-constant KEY_1 : STD_LOGIC_VECTOR := "0001";
-constant KEY_2 : STD_LOGIC_VECTOR := "0010";
-constant KEY_3 : STD_LOGIC_VECTOR := "0011";
-constant KEY_4 : STD_LOGIC_VECTOR := "0100";
-constant KEY_5 : STD_LOGIC_VECTOR := "0101";
-constant KEY_6 : STD_LOGIC_VECTOR := "0110";
-constant KEY_7 : STD_LOGIC_VECTOR := "0111";
-constant KEY_8 : STD_LOGIC_VECTOR := "1000";
-constant KEY_9 : STD_LOGIC_VECTOR := "1001";
-constant KEY_A : STD_LOGIC_VECTOR := "1010";
-constant KEY_B : STD_LOGIC_VECTOR := "1011";
-constant KEY_C : STD_LOGIC_VECTOR := "1100";
-constant KEY_D : STD_LOGIC_VECTOR := "1101";
-constant KEY_asterisk : STD_LOGIC_VECTOR := "1110";		-- *
-constant KEY_pound_sign : STD_LOGIC_VECTOR := "1111";		-- #
+constant KEY_RST: STD_LOGIC_VECTOR := "00000";	-- means the status is reset
+
+constant COUNTER_WIDTH : INTEGER := 8;
+constant COUNTER_RST : STD_LOGIC_VECTOR := "00000000";
+constant COUNT_NUM : INTEGER := 100;
+constant MATCH_NUM : INTEGER := 70;
 
 end package;

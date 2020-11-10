@@ -1,0 +1,48 @@
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+use work.KeyBoardPack.ALL;
+
+entity KeyBoard_TOP is
+	 Port ( clk				: in 	STD_LOGIC;
+           rst_n			: in 	STD_LOGIC;
+			  ColScanPorts	: out STD_LOGIC_VECTOR(3 downto 0);
+			  RowScanPorts	: in  STD_LOGIC_VECTOR(3 downto 0);
+			  KeySel			: out STD_LOGIC_VECTOR(4 downto 0)
+         );
+end KeyBoard_TOP;
+
+architecture Behavioral of keyBoard_TOP is
+
+component ColScan is
+    Port ( clk			: in 	STD_LOGIC;
+           rst_n		: in 	STD_LOGIC;
+			  scan_flag	: out STD_LOGIC;
+			  ScanOut	: out STD_LOGIC_VECTOR(3 downto 0)
+           );
+end component;
+
+component RowScan is
+    Port ( clk			: in 	STD_LOGIC;
+           rst_n		: in 	STD_LOGIC;
+			  ColScan	: in  STD_LOGIC_VECTOR(3 downto 0);
+			  scan_flag	: in  STD_LOGIC;
+			  ScanIn		: in 	STD_LOGIC_VECTOR(3 downto 0);	-- Row Scan
+			  KeySel		: out STD_LOGIC_VECTOR(4 downto 0)	-- Corresponds to the Constants declared in my Pack, press one key at most in a time
+         );
+end component;
+
+signal scan_flag : STD_LOGIC;
+signal ScanOut	: STD_LOGIC_VECTOR(3 downto 0);
+
+begin
+
+CS0: ColScan port map (clk=>clk, rst_n=>rst_n, scan_flag=>scan_flag, ScanOut=>ScanOut);
+RS0: RowScan port map (clk=>clk, rst_n=>rst_n, ColScan=>ScanOut, scan_flag=>scan_flag, ScanIn=>RowScanPorts, KeySel=>KeySel);
+
+ColScanPorts <= ScanOut;
+
+end architecture;
