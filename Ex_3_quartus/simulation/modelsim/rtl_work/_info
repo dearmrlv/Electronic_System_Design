@@ -2,250 +2,292 @@ m255
 K4
 z2
 13
-!s112 1.1
+cModel Technology
+Z0 dC:/Users/liyh/Desktop/Ex_3_quartus/simulation/modelsim
+!s112 0.1
 !i10d 8192
 !i10e 25
 !i10f 100
-cModel Technology
-Z0 dC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/simulation/modelsim
 T_opt
-!s110 1604376085
-VA6?E^AQWo4?hTAV0Oen1^0
+Z1 !s110 1604401196
+V[0<9dlQliM:Jm[><0C;H:0
 04 6 10 work led_tb behavioral 1
-=1-48ba4e4d1dc6-5fa0d614-2a7-bbc
+=1-6c0b8491539c-5fa1382c-196-584
 o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work +acc
-tCvgOpt 0
 n@_opt
-OL;O;10.7;67
-Eled_display
-Z1 w1604209900
-Z2 DPx4 work 8 led_pack 0 22 @3<DBaR3ckTiWBOXCL3QX2
-Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-R0
-Z7 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_Display.vhd
-Z8 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_Display.vhd
+OL;O;10.2c;57
+Eclkdivider
+Z2 w1604400967
+Z3 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
+Z5 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z7 dC:/Users/liyh/Desktop/Ex_3_quartus/simulation/modelsim
+Z8 8C:/Users/liyh/Desktop/Ex_3_quartus/codes/ClkDivider.vhd
+Z9 FC:/Users/liyh/Desktop/Ex_3_quartus/codes/ClkDivider.vhd
 l0
-L37
-Vc5PCY3hRhBBCH[jjTddFN1
-!s100 Ng_?dPk5FNiPDE:0Hckd51
-Z9 OL;C;10.7;67
+L5
+VU6R2KeldiCMUc`6ziS51j0
+Z10 OL;C;10.2c;57
 31
-Z10 !s110 1604376083
+Z11 !s110 1604401195
+Z12 !s108 1604401195.876000
+Z13 !s90 -reportprogress|300|-93|-work|work|C:/Users/liyh/Desktop/Ex_3_quartus/codes/ClkDivider.vhd|
+Z14 !s107 C:/Users/liyh/Desktop/Ex_3_quartus/codes/ClkDivider.vhd|
+Z15 o-93 -work work
+Z16 tExplicit 1
+!s100 ^i:U0aUZGhUP9OaAgL04i3
 !i10b 1
-Z11 !s108 1604376083.000000
-Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_Display.vhd|
-Z13 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_Display.vhd|
-!i113 0
-Z14 o-93 -work work
-Z15 tExplicit 1 CvgOpt 0
-Aarcdisplay
-R2
+!i111 0
+Aarcdivier
 R3
 R4
 R5
 R6
-DEx4 work 11 led_display 0 22 c5PCY3hRhBBCH[jjTddFN1
-l53
-L49
-VfR_9V5^cdbJ[JQN@TcJMB3
-!s100 MI9JenDIeD=WDlDGUF^QX2
-R9
-31
+DEx4 work 10 clkdivider 0 22 U6R2KeldiCMUc`6ziS51j0
+l16
+L11
+VK4=oI@Gai3<Yd@NjiI]Hm0
 R10
-!i10b 1
+31
 R11
 R12
 R13
-!i113 0
 R14
 R15
+R16
+!s100 UQ=W]C<JFJA?N[OGl8VBh0
+!i10b 1
+!i111 0
+Eled_display
+Z17 w1604379225
+Z18 DPx4 work 8 led_pack 0 22 a7`CLAeFnOmSIKcZKT:?i0
+R3
+R4
+R5
+R6
+R7
+Z19 8C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_Display.vhd
+Z20 FC:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_Display.vhd
+l0
+L37
+V<c;CHG2D6]b0PhkINV1d]0
+R10
+31
+R1
+Z21 !s108 1604401196.094000
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_Display.vhd|
+Z23 !s107 C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_Display.vhd|
+R15
+R16
+!s100 m=@YGnC@6EdXRi_j@j3mH2
+!i10b 1
+!i111 0
+Aarcdisplay
+R18
+R3
+R4
+R5
+R6
+DEx4 work 11 led_display 0 22 <c;CHG2D6]b0PhkINV1d]0
+l54
+L49
+V:AW@151_KjNc5b7Fcn3b91
+R10
+31
+R1
+R21
+R22
+R23
+R15
+R16
+!s100 z<17_fXUAmW<_E@L^N4G21
+!i10b 1
+!i111 0
 Pled_pack
 R5
 R6
 w1603290380
-R0
-8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_pack.vhd
-FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_pack.vhd
+R7
+8C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_pack.vhd
+FC:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_pack.vhd
 l0
 L34
-V@3<DBaR3ckTiWBOXCL3QX2
-!s100 d3R>E3D`e]SV@dXOB69Cd2
-R9
+Va7`CLAeFnOmSIKcZKT:?i0
+R10
 31
-Z16 !s110 1604376082
-!i10b 1
-Z17 !s108 1604376082.000000
-!s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_pack.vhd|
-!s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_pack.vhd|
-!i113 0
-R14
+R11
 R15
+R16
+!s100 >UZ1[]@LPjKL@Jd;VkNP13
+!i10b 1
+!s108 1604401195.798000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_pack.vhd|
+!s107 C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_pack.vhd|
+!i111 0
 Eled_str
-Z18 w1604209774
-R2
+Z24 w1604377635
+R18
 R5
 R6
-R0
-Z19 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_STR.vhd
-Z20 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_STR.vhd
+R7
+Z25 8C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_STR.vhd
+Z26 FC:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_STR.vhd
 l0
 L36
-V[UcZzXWi:SK69<j2hVaRA3
-!s100 D612B2>3j=4E0oAWaU1YU1
-R9
-31
+VV=45c9Ok[8oB99kP53z3R1
 R10
-!i10b 1
-R11
-Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_STR.vhd|
-Z22 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_STR.vhd|
-!i113 0
-R14
+31
+R1
+Z27 !s108 1604401196.032000
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_STR.vhd|
+Z29 !s107 C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_STR.vhd|
 R15
+R16
+!s100 _2o?QE0IC@OWFj;GYz?K73
+!i10b 1
+!i111 0
 Abehavioral
-R2
+R18
 R5
 R6
-DEx4 work 7 led_str 0 22 [UcZzXWi:SK69<j2hVaRA3
+DEx4 work 7 led_str 0 22 V=45c9Ok[8oB99kP53z3R1
 l52
 L47
-V_`J<LK9>J0G@OAYP5@lQT3
-!s100 AFToNV<zE<VjZaM=FWXP<2
-R9
-31
+VSUdB1IM0loW63oX7m5kJ?0
 R10
-!i10b 1
-R11
-R21
-R22
-!i113 0
-R14
+31
+R1
+R27
+R28
+R29
 R15
+R16
+!s100 cCSNiQoLOWm@g0V>CSSNY2
+!i10b 1
+!i111 0
 Eled_tb
-Z23 w1604376054
-R2
+Z30 w1604376054
+R18
 R3
 R4
 R5
 R6
-R0
-Z24 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_tb.vhd
-Z25 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_tb.vhd
+R7
+Z31 8C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_tb.vhd
+Z32 FC:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_tb.vhd
 l0
 L37
-V3f2]In9YCo02fDA6@R1_l3
-!s100 >M3k6oEO:LGFk4>ZcB^X]0
-R9
-31
+Va>;[1I<>^D6?>>1<R6U733
 R10
-!i10b 1
-R11
-Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_tb.vhd|
-Z27 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_tb.vhd|
-!i113 0
-R14
+31
+R1
+Z33 !s108 1604401196.172000
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_tb.vhd|
+Z35 !s107 C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_tb.vhd|
 R15
+R16
+!s100 DJQKY0;UOX_cVAY0cXO`;1
+!i10b 1
+!i111 0
 Abehavioral
-R2
+R18
 R3
 R4
 R5
 R6
-DEx4 work 6 led_tb 0 22 3f2]In9YCo02fDA6@R1_l3
+DEx4 work 6 led_tb 0 22 a>;[1I<>^D6?>>1<R6U733
 l64
 L41
-Vz]eZ7YUA3_MMn0hX4TV?>2
-!s100 fY2;CdK39EgN80;ZjQY4N2
-R9
-31
+V[S@KHh8IBzMZjZU;1=N211
 R10
-!i10b 1
-R11
-R26
-R27
-!i113 0
-R14
+31
+R1
+R33
+R34
+R35
 R15
+R16
+!s100 D3<XNF;4cLI81GoTRYVW;2
+!i10b 1
+!i111 0
 Eled_top
-Z28 w1604205282
+Z36 w1604400953
 R5
 R6
-R0
-Z29 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_TOP.vhd
-Z30 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_TOP.vhd
+R7
+Z37 8C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_TOP.vhd
+Z38 FC:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_TOP.vhd
 l0
 L34
-V2YlJZ^MOC7FP?o;Ek4_J<0
-!s100 zQZBK:N`Se3aj1Hf5zl9d1
-R9
+V5F^EPZHHzaKBNcc[>6Bg03
+R10
 31
-R16
-!i10b 1
-R17
-Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_TOP.vhd|
-Z32 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/LED_TOP.vhd|
-!i113 0
-R14
+R11
+Z39 !s108 1604401195.580000
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_TOP.vhd|
+Z41 !s107 C:/Users/liyh/Desktop/Ex_3_quartus/codes/LED_TOP.vhd|
 R15
+R16
+!s100 fRQOW?mf2jbI2e^[CUbYc1
+!i10b 1
+!i111 0
 Abehavioral
 R5
 R6
-DEx4 work 7 led_top 0 22 2YlJZ^MOC7FP?o;Ek4_J<0
-l84
+DEx4 work 7 led_top 0 22 5F^EPZHHzaKBNcc[>6Bg03
+l91
 L48
-VRb`Gc>e6P]W@CeLLPzMCm2
-!s100 Jo0d<HVWVh?zUMMn6iKQh2
-R9
+VObjS3m@ajhcZ3IY<J5M=d0
+R10
 31
-R16
-!i10b 1
-R17
-R31
-R32
-!i113 0
-R14
+R11
+R39
+R40
+R41
 R15
+R16
+!s100 ODn?Af9]::Wb6]S4]Wem53
+!i10b 1
+!i111 0
 Etranslator
-Z33 w1604200825
-R2
+Z42 w1604200825
+R18
 R5
 R6
-R0
-Z34 8C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/translator.vhd
-Z35 FC:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/translator.vhd
+R7
+Z43 8C:/Users/liyh/Desktop/Ex_3_quartus/codes/translator.vhd
+Z44 FC:/Users/liyh/Desktop/Ex_3_quartus/codes/translator.vhd
 l0
 L35
-VC1D6=<`ijkgzeT=i_O8E31
-!s100 ??eQd`Hh6EMEC0f7A>cIO2
-R9
-31
+VmMLWgU_9[c`z@;SUjF6`b0
 R10
-!i10b 1
+31
 R11
-Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/translator.vhd|
-Z37 !s107 C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_3_quartus/codes/translator.vhd|
-!i113 0
-R14
+Z45 !s108 1604401195.954000
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/liyh/Desktop/Ex_3_quartus/codes/translator.vhd|
+Z47 !s107 C:/Users/liyh/Desktop/Ex_3_quartus/codes/translator.vhd|
 R15
+R16
+!s100 [Gz]l0d>M7NZE_:2HD7_M3
+!i10b 1
+!i111 0
 Abehavioral
-R2
+R18
 R5
 R6
-DEx4 work 10 translator 0 22 C1D6=<`ijkgzeT=i_O8E31
+DEx4 work 10 translator 0 22 mMLWgU_9[c`z@;SUjF6`b0
 l44
 L42
-Vc1PFlQ<K;cMd<VkG9B1ce0
-!s100 ^hfznD?bYJ2Q03zzI?lR^0
-R9
-31
+Vcb4aQ1HW`<hZ_e?^dYo_k0
 R10
-!i10b 1
+31
 R11
-R36
-R37
-!i113 0
-R14
+R45
+R46
+R47
 R15
+R16
+!s100 f:>DL0N1i>koz4MJaQ24T3
+!i10b 1
+!i111 0

@@ -92,16 +92,23 @@ begin
 		    end case;
 			case (CrST) is 
                 when S0		=>  LED_dis_sel <= LED_DIS0;
+										 data_display <= DIS_0&'1';
                 when S1     =>  LED_dis_sel <= LED_DIS1;
+										data_display <= DIS_1&'1';
                 when S2		=>  LED_dis_sel <= LED_DIS2;
+										data_display <= DIS_2&'1';
                 when S3     =>  LED_dis_sel <= LED_DIS3;
+										data_display <= DIS_3&'1';
                 when S4		=>  LED_dis_sel <= LED_DIS4;
+											data_display <= DIS_4&'1';
                 when S5     =>  LED_dis_sel <= LED_DIS5;
+											data_display <= DIS_5&'1';
                 when S6		=>  LED_dis_sel <= LED_DIS6;
+											data_display <= DIS_6&'1';
                 when S7     =>  LED_dis_sel <= LED_DIS7;
-                when others =>  LED_dis_sel <= "11111111";  -- light all the LED to show errors
+											data_display <= DIS_7&'1';
+                when others =>  LED_dis_sel <= LED_DIS0;  -- light all the LED to show errors
 			end case;
-			data_display <= LED_data_in;
 	end process;
 
 --Original Version

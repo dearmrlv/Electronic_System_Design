@@ -60,30 +60,36 @@ component LED_STR is
            latch_en     :   in  STD_LOGIC;     -- enable to input the data
            clk          :   in  STD_LOGIC;     -- Clock
            rst_n        :   in  STD_LOGIC;     -- Reset
-           data_sel     :   in  STD_LOGIC_VECTOR(2 downto 0);   -- data select
+           data_sel     :   out  STD_LOGIC_VECTOR(2 downto 0);   -- data select
            LED_data_out :   out STD_LOGIC_VECTOR(7 downto 0)  -- data output to Display part
            );
 end component;
 
-component LED_Display is
-    Port ( LED_data_in  : in STD_LOGIC_VECTOR (7 downto 0);     -- select LED to input data
-           clk          : in STD_LOGIC;     -- Clock
-           rst_n        : in STD_LOGIC;     -- Reset                    
+component LED_Display2 is
+    Port ( LED_data_in  : in STD_LOGIC_VECTOR (7 downto 0);     -- select LED to input data                
            ------------------------------------     LED display control
            data_display : out STD_LOGIC_VECTOR (7 downto 0);    -- Controls the a,b, ..., g, DP Pins
-           data_sel  : out STD_LOGIC_VECTOR(2 downto 0);        -- select a data from LED_STR
+           data_sel  : in STD_LOGIC_VECTOR(2 downto 0);        -- select a data from LED_STR
            ------------------------------------     Select a LED to display
            LED_dis_sel  : out STD_LOGIC_VECTOR(7 downto 0)
            );
 end component;
 
+component ClkDivider is
+port (rst_n		: IN 	std_logic;
+		clk_in	: IN 	std_logic;
+		clk_out	: OUT std_logic);
+end component;
+
 signal data_store : STD_LOGIC_VECTOR(7 downto 0);   -- data for store into s0
 signal data_dis : STD_LOGIC_VECTOR(7 downto 0);     -- data into d0
 signal data_sel : STD_LOGIC_VECTOR(2 downto 0);
+signal clk_low  : STD_LOGIC;
 
 begin
-t0: translator  port map (data_in=>LED_data, DP=>DP, data_out=>data_store, clk=>clk);
-s0: LED_STR     port map (LED_sel=>LED_sel, LED_data_in=>data_store, latch_en=>latch_en, clk=>clk, rst_n=>rst_n, data_sel=>data_sel, LED_data_out=>data_dis);
-d0: LED_Display port map (LED_data_in=>data_dis, clk=>clk, rst_n=>rst_n, data_display=>data_display, data_sel=>data_sel, LED_dis_sel=>LED_dis_sel);
+c0: ClkDivider  port map (rst_n=>rst_n, clk_in=>clk, clk_out=>clk_low);
+t0: translator  port map (data_in=>LED_data, DP=>DP, data_out=>data_store, clk=>clk_low);
+s0: LED_STR     port map (LED_sel=>LED_sel, LED_data_in=>data_store, latch_en=>latch_en, clk=>clk_low, rst_n=>rst_n, data_sel=>data_sel, LED_data_out=>data_dis);
+d0: LED_Display2 port map (LED_data_in=>data_dis, data_display=>data_display, data_sel=>data_sel, LED_dis_sel=>LED_dis_sel);
 
 end Behavioral;

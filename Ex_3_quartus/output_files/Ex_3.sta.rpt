@@ -1,0 +1,1474 @@
+TimeQuest Timing Analyzer report for Ex_3
+Tue Nov 03 21:29:46 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1100mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1100mV 85C Model Setup Summary
+  8. Slow 1100mV 85C Model Hold Summary
+  9. Slow 1100mV 85C Model Recovery Summary
+ 10. Slow 1100mV 85C Model Removal Summary
+ 11. Slow 1100mV 85C Model Minimum Pulse Width Summary
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Slow 1100mV 85C Model Metastability Report
+ 19. Slow 1100mV 0C Model Fmax Summary
+ 20. Slow 1100mV 0C Model Setup Summary
+ 21. Slow 1100mV 0C Model Hold Summary
+ 22. Slow 1100mV 0C Model Recovery Summary
+ 23. Slow 1100mV 0C Model Removal Summary
+ 24. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 25. Setup Times
+ 26. Hold Times
+ 27. Clock to Output Times
+ 28. Minimum Clock to Output Times
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Slow 1100mV 0C Model Metastability Report
+ 32. Fast 1100mV 85C Model Setup Summary
+ 33. Fast 1100mV 85C Model Hold Summary
+ 34. Fast 1100mV 85C Model Recovery Summary
+ 35. Fast 1100mV 85C Model Removal Summary
+ 36. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 37. Setup Times
+ 38. Hold Times
+ 39. Clock to Output Times
+ 40. Minimum Clock to Output Times
+ 41. Propagation Delay
+ 42. Minimum Propagation Delay
+ 43. Fast 1100mV 85C Model Metastability Report
+ 44. Fast 1100mV 0C Model Setup Summary
+ 45. Fast 1100mV 0C Model Hold Summary
+ 46. Fast 1100mV 0C Model Recovery Summary
+ 47. Fast 1100mV 0C Model Removal Summary
+ 48. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 49. Setup Times
+ 50. Hold Times
+ 51. Clock to Output Times
+ 52. Minimum Clock to Output Times
+ 53. Propagation Delay
+ 54. Minimum Propagation Delay
+ 55. Fast 1100mV 0C Model Metastability Report
+ 56. Multicorner Timing Analysis Summary
+ 57. Setup Times
+ 58. Hold Times
+ 59. Clock to Output Times
+ 60. Minimum Clock to Output Times
+ 61. Progagation Delay
+ 62. Minimum Progagation Delay
+ 63. Board Trace Model Assignments
+ 64. Input Transition Times
+ 65. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 66. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 67. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 68. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 69. Setup Transfers
+ 70. Hold Transfers
+ 71. Report TCCS
+ 72. Report RSKM
+ 73. Unconstrained Paths
+ 74. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                       ;
++--------------------+--------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
+; Revision Name      ; Ex_3                                                               ;
+; Device Family      ; Cyclone V                                                          ;
+; Device Name        ; 5CEFA2F23C8                                                        ;
+; Timing Models      ; Final                                                              ;
+; Delay Model        ; Combined                                                           ;
+; Rise/Fall Delays   ; Enabled                                                            ;
++--------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.86        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;  28.6%      ;
+;     Processors 5-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                               ;
++-------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------+
+; Clock Name        ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets               ;
++-------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------+
+; clk               ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }               ;
+; ClkDivider:c0|tmp ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ClkDivider:c0|tmp } ;
++-------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------+
+
+
++---------------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary                      ;
++------------+-----------------+-------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name        ; Note ;
++------------+-----------------+-------------------+------+
+; 254.13 MHz ; 254.13 MHz      ; clk               ;      ;
+; 330.69 MHz ; 330.69 MHz      ; ClkDivider:c0|tmp ;      ;
++------------+-----------------+-------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++--------------------------------------------+
+; Slow 1100mV 85C Model Setup Summary        ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; clk               ; -2.935 ; -47.861       ;
+; ClkDivider:c0|tmp ; -2.024 ; -113.977      ;
++-------------------+--------+---------------+
+
+
++--------------------------------------------+
+; Slow 1100mV 85C Model Hold Summary         ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; clk               ; -1.676 ; -1.676        ;
+; ClkDivider:c0|tmp ; 0.005  ; 0.000         ;
++-------------------+--------+---------------+
+
+
+------------------------------------------
+; Slow 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
++-------------------+--------+----------------------+
+; Clock             ; Slack  ; End Point TNS        ;
++-------------------+--------+----------------------+
+; ClkDivider:c0|tmp ; -0.724 ; -95.345              ;
+; clk               ; -0.724 ; -18.949              ;
++-------------------+--------+----------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Setup Times                                                                       ;
++--------------+-------------------+-------+-------+------------+-------------------+
+; Data Port    ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++--------------+-------------------+-------+-------+------------+-------------------+
+; DP           ; ClkDivider:c0|tmp ; 2.706 ; 2.841 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_data[*]  ; ClkDivider:c0|tmp ; 5.606 ; 6.306 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[0] ; ClkDivider:c0|tmp ; 4.520 ; 4.750 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[1] ; ClkDivider:c0|tmp ; 4.168 ; 4.416 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[2] ; ClkDivider:c0|tmp ; 5.606 ; 6.306 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[3] ; ClkDivider:c0|tmp ; 4.842 ; 4.931 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_sel[*]   ; ClkDivider:c0|tmp ; 5.758 ; 5.887 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[0]  ; ClkDivider:c0|tmp ; 5.131 ; 5.110 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[1]  ; ClkDivider:c0|tmp ; 4.919 ; 5.214 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[2]  ; ClkDivider:c0|tmp ; 5.758 ; 5.887 ; Rise       ; ClkDivider:c0|tmp ;
+; latch_en     ; ClkDivider:c0|tmp ; 5.694 ; 6.272 ; Rise       ; ClkDivider:c0|tmp ;
+; rst_n        ; ClkDivider:c0|tmp ; 7.278 ; 7.948 ; Rise       ; ClkDivider:c0|tmp ;
++--------------+-------------------+-------+-------+------------+-------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Hold Times                                                                          ;
++--------------+-------------------+--------+--------+------------+-------------------+
+; Data Port    ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++--------------+-------------------+--------+--------+------------+-------------------+
+; DP           ; ClkDivider:c0|tmp ; -1.648 ; -1.726 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_data[*]  ; ClkDivider:c0|tmp ; -1.398 ; -1.461 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[0] ; ClkDivider:c0|tmp ; -1.398 ; -1.480 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[1] ; ClkDivider:c0|tmp ; -1.404 ; -1.461 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[2] ; ClkDivider:c0|tmp ; -2.654 ; -2.943 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[3] ; ClkDivider:c0|tmp ; -2.100 ; -2.232 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_sel[*]   ; ClkDivider:c0|tmp ; -2.450 ; -2.551 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[0]  ; ClkDivider:c0|tmp ; -2.463 ; -2.551 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[1]  ; ClkDivider:c0|tmp ; -2.450 ; -2.755 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[2]  ; ClkDivider:c0|tmp ; -2.577 ; -2.575 ; Rise       ; ClkDivider:c0|tmp ;
+; latch_en     ; ClkDivider:c0|tmp ; -2.856 ; -3.036 ; Rise       ; ClkDivider:c0|tmp ;
+; rst_n        ; ClkDivider:c0|tmp ; -3.086 ; -3.513 ; Rise       ; ClkDivider:c0|tmp ;
++--------------+-------------------+--------+--------+------------+-------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                   ;
++------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port        ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++------------------+-------------------+--------+--------+------------+-------------------+
+; data_display[*]  ; ClkDivider:c0|tmp ; 15.019 ; 16.479 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 12.451 ; 13.819 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 15.019 ; 16.479 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 13.366 ; 14.807 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 14.370 ; 15.772 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 10.681 ; 11.222 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 12.417 ; 13.594 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 13.021 ; 13.548 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 10.867 ; 11.361 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_dis_sel[*]   ; ClkDivider:c0|tmp ; 15.555 ; 17.333 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[0]  ; ClkDivider:c0|tmp ; 15.555 ; 17.333 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[1]  ; ClkDivider:c0|tmp ; 13.918 ; 14.935 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[2]  ; ClkDivider:c0|tmp ; 13.770 ; 14.812 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[3]  ; ClkDivider:c0|tmp ; 14.216 ; 15.521 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[4]  ; ClkDivider:c0|tmp ; 13.487 ; 14.713 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[5]  ; ClkDivider:c0|tmp ; 12.507 ; 13.004 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[6]  ; ClkDivider:c0|tmp ; 14.817 ; 16.572 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[7]  ; ClkDivider:c0|tmp ; 13.188 ; 14.246 ; Fall       ; ClkDivider:c0|tmp ;
+; data_display[*]  ; ClkDivider:c0|tmp ; 14.879 ; 16.273 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 12.241 ; 13.780 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 14.879 ; 16.273 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 13.245 ; 14.934 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 13.976 ; 15.306 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 10.596 ; 11.384 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 12.470 ; 13.717 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 12.173 ; 12.653 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 10.707 ; 11.265 ; Fall       ; ClkDivider:c0|tmp ;
++------------------+-------------------+--------+--------+------------+-------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                           ;
++------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port        ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++------------------+-------------------+--------+--------+------------+-------------------+
+; data_display[*]  ; ClkDivider:c0|tmp ; 7.822  ; 8.104  ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 9.805  ; 10.985 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 10.289 ; 11.353 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 10.304 ; 11.570 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 10.013 ; 10.880 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 7.822  ; 8.104  ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 9.718  ; 10.689 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 8.533  ; 8.805  ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 8.595  ; 8.927  ; Rise       ; ClkDivider:c0|tmp ;
+; LED_dis_sel[*]   ; ClkDivider:c0|tmp ; 8.816  ; 9.376  ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[0]  ; ClkDivider:c0|tmp ; 11.690 ; 13.076 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[1]  ; ClkDivider:c0|tmp ; 10.102 ; 10.927 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[2]  ; ClkDivider:c0|tmp ; 10.071 ; 10.953 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[3]  ; ClkDivider:c0|tmp ; 10.440 ; 11.490 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[4]  ; ClkDivider:c0|tmp ; 9.853  ; 10.933 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[5]  ; ClkDivider:c0|tmp ; 8.816  ; 9.376  ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[6]  ; ClkDivider:c0|tmp ; 11.067 ; 12.827 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[7]  ; ClkDivider:c0|tmp ; 9.811  ; 10.675 ; Fall       ; ClkDivider:c0|tmp ;
+; data_display[*]  ; ClkDivider:c0|tmp ; 7.670  ; 8.133  ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 9.495  ; 10.848 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 9.677  ; 10.842 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 9.805  ; 11.111 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 9.910  ; 10.958 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 7.670  ; 8.133  ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 9.148  ; 10.098 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 8.083  ; 8.453  ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 7.962  ; 8.327  ; Fall       ; ClkDivider:c0|tmp ;
++------------------+-------------------+--------+--------+------------+-------------------+
+
+
++------------------------------------------------------------------+
+; Propagation Delay                                                ;
++------------+-----------------+--------+--------+--------+--------+
+; Input Port ; Output Port     ; RR     ; RF     ; FR     ; FF     ;
++------------+-----------------+--------+--------+--------+--------+
+; rst_n      ; LED_dis_sel[0]  ;        ; 19.892 ; 18.668 ;        ;
+; rst_n      ; LED_dis_sel[1]  ; 16.263 ; 17.494 ; 17.031 ; 18.015 ;
+; rst_n      ; LED_dis_sel[2]  ; 16.329 ; 17.232 ; 16.740 ; 17.925 ;
+; rst_n      ; LED_dis_sel[3]  ; 16.775 ; 18.064 ; 17.441 ; 18.634 ;
+; rst_n      ; LED_dis_sel[4]  ; 16.243 ; 17.272 ; 16.600 ; 17.803 ;
+; rst_n      ; LED_dis_sel[5]  ; 14.857 ; 15.563 ; 15.620 ; 16.055 ;
+; rst_n      ; LED_dis_sel[6]  ; 17.434 ; 19.215 ; 18.035 ; 19.803 ;
+; rst_n      ; LED_dis_sel[7]  ; 15.852 ;        ;        ; 17.376 ;
+; rst_n      ; data_display[0] ;        ; 16.430 ; 15.757 ;        ;
+; rst_n      ; data_display[1] ;        ; 18.953 ; 18.397 ;        ;
+; rst_n      ; data_display[2] ; 15.247 ;        ;        ; 17.505 ;
+; rst_n      ; data_display[3] ; 16.387 ;        ;        ; 18.349 ;
+; rst_n      ; data_display[4] ; 12.531 ;        ;        ; 13.856 ;
+; rst_n      ; data_display[5] ; 14.153 ;        ;        ; 16.007 ;
+; rst_n      ; data_display[6] ; 14.318 ;        ;        ; 15.296 ;
+; rst_n      ; data_display[7] ; 12.955 ;        ;        ; 14.032 ;
++------------+-----------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------------+
+; Minimum Propagation Delay                                        ;
++------------+-----------------+--------+--------+--------+--------+
+; Input Port ; Output Port     ; RR     ; RF     ; FR     ; FF     ;
++------------+-----------------+--------+--------+--------+--------+
+; rst_n      ; LED_dis_sel[0]  ;        ; 16.177 ; 15.132 ;        ;
+; rst_n      ; LED_dis_sel[1]  ; 13.239 ; 14.028 ; 13.657 ; 14.579 ;
+; rst_n      ; LED_dis_sel[2]  ; 13.378 ; 14.061 ; 13.577 ; 14.626 ;
+; rst_n      ; LED_dis_sel[3]  ; 13.577 ; 14.874 ; 14.242 ; 15.004 ;
+; rst_n      ; LED_dis_sel[4]  ; 13.328 ; 14.070 ; 13.367 ; 14.558 ;
+; rst_n      ; LED_dis_sel[5]  ; 11.953 ; 12.692 ; 12.635 ; 12.890 ;
+; rst_n      ; LED_dis_sel[6]  ; 14.132 ; 15.964 ; 14.773 ; 16.279 ;
+; rst_n      ; LED_dis_sel[7]  ; 12.909 ;        ;        ; 14.118 ;
+; rst_n      ; data_display[0] ;        ; 14.710 ; 13.957 ;        ;
+; rst_n      ; data_display[1] ;        ; 15.628 ; 15.038 ;        ;
+; rst_n      ; data_display[2] ; 13.756 ;        ;        ; 15.528 ;
+; rst_n      ; data_display[3] ; 13.436 ;        ;        ; 14.943 ;
+; rst_n      ; data_display[4] ; 11.275 ;        ;        ; 12.199 ;
+; rst_n      ; data_display[5] ; 12.709 ;        ;        ; 14.191 ;
+; rst_n      ; data_display[6] ; 11.638 ;        ;        ; 12.331 ;
+; rst_n      ; data_display[7] ; 11.735 ;        ;        ; 12.505 ;
++------------+-----------------+--------+--------+--------+--------+
+
+
+----------------------------------------------
+; Slow 1100mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++---------------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                       ;
++------------+-----------------+-------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name        ; Note ;
++------------+-----------------+-------------------+------+
+; 250.75 MHz ; 250.75 MHz      ; clk               ;      ;
+; 335.57 MHz ; 335.57 MHz      ; ClkDivider:c0|tmp ;      ;
++------------+-----------------+-------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary         ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; clk               ; -2.988 ; -48.979       ;
+; ClkDivider:c0|tmp ; -1.980 ; -108.844      ;
++-------------------+--------+---------------+
+
+
++--------------------------------------------+
+; Slow 1100mV 0C Model Hold Summary          ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; clk               ; -1.837 ; -1.837        ;
+; ClkDivider:c0|tmp ; 0.064  ; 0.000         ;
++-------------------+--------+---------------+
+
+
+-----------------------------------------
+; Slow 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
++-------------------+--------+---------------------+
+; Clock             ; Slack  ; End Point TNS       ;
++-------------------+--------+---------------------+
+; ClkDivider:c0|tmp ; -0.724 ; -93.928             ;
+; clk               ; -0.724 ; -18.856             ;
++-------------------+--------+---------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Setup Times                                                                       ;
++--------------+-------------------+-------+-------+------------+-------------------+
+; Data Port    ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++--------------+-------------------+-------+-------+------------+-------------------+
+; DP           ; ClkDivider:c0|tmp ; 2.817 ; 3.003 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_data[*]  ; ClkDivider:c0|tmp ; 5.731 ; 6.453 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[0] ; ClkDivider:c0|tmp ; 4.637 ; 4.898 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[1] ; ClkDivider:c0|tmp ; 4.299 ; 4.591 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[2] ; ClkDivider:c0|tmp ; 5.731 ; 6.453 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[3] ; ClkDivider:c0|tmp ; 4.971 ; 5.091 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_sel[*]   ; ClkDivider:c0|tmp ; 5.729 ; 5.893 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[0]  ; ClkDivider:c0|tmp ; 5.075 ; 5.017 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[1]  ; ClkDivider:c0|tmp ; 4.770 ; 5.231 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[2]  ; ClkDivider:c0|tmp ; 5.729 ; 5.893 ; Rise       ; ClkDivider:c0|tmp ;
+; latch_en     ; ClkDivider:c0|tmp ; 5.564 ; 6.240 ; Rise       ; ClkDivider:c0|tmp ;
+; rst_n        ; ClkDivider:c0|tmp ; 7.151 ; 7.871 ; Rise       ; ClkDivider:c0|tmp ;
++--------------+-------------------+-------+-------+------------+-------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Hold Times                                                                          ;
++--------------+-------------------+--------+--------+------------+-------------------+
+; Data Port    ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++--------------+-------------------+--------+--------+------------+-------------------+
+; DP           ; ClkDivider:c0|tmp ; -1.773 ; -1.899 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_data[*]  ; ClkDivider:c0|tmp ; -1.503 ; -1.589 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[0] ; ClkDivider:c0|tmp ; -1.503 ; -1.602 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[1] ; ClkDivider:c0|tmp ; -1.512 ; -1.589 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[2] ; ClkDivider:c0|tmp ; -2.782 ; -3.135 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[3] ; ClkDivider:c0|tmp ; -2.194 ; -2.372 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_sel[*]   ; ClkDivider:c0|tmp ; -2.451 ; -2.607 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[0]  ; ClkDivider:c0|tmp ; -2.481 ; -2.607 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[1]  ; ClkDivider:c0|tmp ; -2.451 ; -2.783 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[2]  ; ClkDivider:c0|tmp ; -2.644 ; -2.657 ; Rise       ; ClkDivider:c0|tmp ;
+; latch_en     ; ClkDivider:c0|tmp ; -2.853 ; -3.031 ; Rise       ; ClkDivider:c0|tmp ;
+; rst_n        ; ClkDivider:c0|tmp ; -3.114 ; -3.622 ; Rise       ; ClkDivider:c0|tmp ;
++--------------+-------------------+--------+--------+------------+-------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                   ;
++------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port        ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++------------------+-------------------+--------+--------+------------+-------------------+
+; data_display[*]  ; ClkDivider:c0|tmp ; 14.500 ; 16.083 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 12.121 ; 13.471 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 14.500 ; 16.083 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 12.823 ; 14.276 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 13.844 ; 15.402 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 10.183 ; 10.765 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 11.970 ; 13.202 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 12.662 ; 13.339 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 10.500 ; 11.138 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_dis_sel[*]   ; ClkDivider:c0|tmp ; 15.227 ; 16.944 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[0]  ; ClkDivider:c0|tmp ; 15.227 ; 16.944 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[1]  ; ClkDivider:c0|tmp ; 13.564 ; 14.613 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[2]  ; ClkDivider:c0|tmp ; 13.370 ; 14.504 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[3]  ; ClkDivider:c0|tmp ; 13.761 ; 15.220 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[4]  ; ClkDivider:c0|tmp ; 13.042 ; 14.435 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[5]  ; ClkDivider:c0|tmp ; 12.237 ; 12.794 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[6]  ; ClkDivider:c0|tmp ; 14.496 ; 16.193 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[7]  ; ClkDivider:c0|tmp ; 12.790 ; 13.960 ; Fall       ; ClkDivider:c0|tmp ;
+; data_display[*]  ; ClkDivider:c0|tmp ; 14.405 ; 15.896 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 11.789 ; 13.370 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 14.405 ; 15.896 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 12.711 ; 14.391 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 13.521 ; 14.928 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 10.141 ; 11.035 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 12.041 ; 13.366 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 11.878 ; 12.494 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 10.316 ; 11.029 ; Fall       ; ClkDivider:c0|tmp ;
++------------------+-------------------+--------+--------+------------+-------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                           ;
++------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port        ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++------------------+-------------------+--------+--------+------------+-------------------+
+; data_display[*]  ; ClkDivider:c0|tmp ; 7.496  ; 7.792  ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 9.485  ; 10.655 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 9.889  ; 11.035 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 9.913  ; 11.212 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 9.599  ; 10.534 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 7.496  ; 7.792  ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 9.229  ; 10.273 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 8.082  ; 8.497  ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 8.163  ; 8.593  ; Rise       ; ClkDivider:c0|tmp ;
+; LED_dis_sel[*]   ; ClkDivider:c0|tmp ; 8.434  ; 9.054  ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[0]  ; ClkDivider:c0|tmp ; 11.281 ; 12.724 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[1]  ; ClkDivider:c0|tmp ; 9.683  ; 10.603 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[2]  ; ClkDivider:c0|tmp ; 9.668  ; 10.665 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[3]  ; ClkDivider:c0|tmp ; 10.001 ; 11.128 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[4]  ; ClkDivider:c0|tmp ; 9.456  ; 10.696 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[5]  ; ClkDivider:c0|tmp ; 8.434  ; 9.054  ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[6]  ; ClkDivider:c0|tmp ; 10.678 ; 12.559 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[7]  ; ClkDivider:c0|tmp ; 9.436  ; 10.418 ; Fall       ; ClkDivider:c0|tmp ;
+; data_display[*]  ; ClkDivider:c0|tmp ; 7.367  ; 7.808  ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 9.132  ; 10.541 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 9.315  ; 10.570 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 9.369  ; 10.777 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 9.441  ; 10.668 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 7.367  ; 7.808  ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 8.709  ; 9.809  ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 7.701  ; 8.194  ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 7.508  ; 8.042  ; Fall       ; ClkDivider:c0|tmp ;
++------------------+-------------------+--------+--------+------------+-------------------+
+
+
++------------------------------------------------------------------+
+; Propagation Delay                                                ;
++------------+-----------------+--------+--------+--------+--------+
+; Input Port ; Output Port     ; RR     ; RF     ; FR     ; FF     ;
++------------+-----------------+--------+--------+--------+--------+
+; rst_n      ; LED_dis_sel[0]  ;        ; 19.447 ; 18.326 ;        ;
+; rst_n      ; LED_dis_sel[1]  ; 15.809 ; 17.116 ; 16.663 ; 17.675 ;
+; rst_n      ; LED_dis_sel[2]  ; 15.873 ; 16.847 ; 16.234 ; 17.603 ;
+; rst_n      ; LED_dis_sel[3]  ; 16.264 ; 17.667 ; 17.022 ; 18.319 ;
+; rst_n      ; LED_dis_sel[4]  ; 15.846 ; 16.938 ; 16.141 ; 17.517 ;
+; rst_n      ; LED_dis_sel[5]  ; 14.474 ; 15.297 ; 15.336 ; 15.829 ;
+; rst_n      ; LED_dis_sel[6]  ; 17.091 ; 18.836 ; 17.712 ; 19.436 ;
+; rst_n      ; LED_dis_sel[7]  ; 15.445 ;        ;        ; 17.059 ;
+; rst_n      ; data_display[0] ;        ; 15.987 ; 15.435 ;        ;
+; rst_n      ; data_display[1] ;        ; 18.502 ; 17.977 ;        ;
+; rst_n      ; data_display[2] ; 14.838 ;        ;        ; 17.135 ;
+; rst_n      ; data_display[3] ; 15.972 ;        ;        ; 18.044 ;
+; rst_n      ; data_display[4] ; 12.195 ;        ;        ; 13.591 ;
+; rst_n      ; data_display[5] ; 13.690 ;        ;        ; 15.703 ;
+; rst_n      ; data_display[6] ; 14.043 ;        ;        ; 15.150 ;
+; rst_n      ; data_display[7] ; 12.598 ;        ;        ; 13.819 ;
++------------+-----------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------------+
+; Minimum Propagation Delay                                        ;
++------------+-----------------+--------+--------+--------+--------+
+; Input Port ; Output Port     ; RR     ; RF     ; FR     ; FF     ;
++------------+-----------------+--------+--------+--------+--------+
+; rst_n      ; LED_dis_sel[0]  ;        ; 15.763 ; 14.709 ;        ;
+; rst_n      ; LED_dis_sel[1]  ; 12.756 ; 13.642 ; 13.196 ; 14.215 ;
+; rst_n      ; LED_dis_sel[2]  ; 12.940 ; 13.704 ; 13.098 ; 14.376 ;
+; rst_n      ; LED_dis_sel[3]  ; 13.074 ; 14.531 ; 13.832 ; 14.640 ;
+; rst_n      ; LED_dis_sel[4]  ; 12.947 ; 13.769 ; 12.968 ; 14.345 ;
+; rst_n      ; LED_dis_sel[5]  ; 11.507 ; 12.393 ; 12.319 ; 12.566 ;
+; rst_n      ; LED_dis_sel[6]  ; 13.711 ; 15.659 ; 14.471 ; 15.940 ;
+; rst_n      ; LED_dis_sel[7]  ; 12.469 ;        ;        ; 13.883 ;
+; rst_n      ; data_display[0] ;        ; 14.306 ; 13.598 ;        ;
+; rst_n      ; data_display[1] ;        ; 15.236 ; 14.665 ;        ;
+; rst_n      ; data_display[2] ; 13.354 ;        ;        ; 15.250 ;
+; rst_n      ; data_display[3] ; 13.031 ;        ;        ; 14.713 ;
+; rst_n      ; data_display[4] ; 10.955 ;        ;        ; 11.999 ;
+; rst_n      ; data_display[5] ; 12.247 ;        ;        ; 13.844 ;
+; rst_n      ; data_display[6] ; 11.308 ;        ;        ; 12.142 ;
+; rst_n      ; data_display[7] ; 11.316 ;        ;        ; 12.267 ;
++------------+-----------------+--------+--------+--------+--------+
+
+
+---------------------------------------------
+; Slow 1100mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary        ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; clk               ; -0.764 ; -10.733       ;
+; ClkDivider:c0|tmp ; -0.646 ; -27.124       ;
++-------------------+--------+---------------+
+
+
++--------------------------------------------+
+; Fast 1100mV 85C Model Hold Summary         ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; clk               ; -0.676 ; -0.676        ;
+; ClkDivider:c0|tmp ; 0.050  ; 0.000         ;
++-------------------+--------+---------------+
+
+
+------------------------------------------
+; Fast 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
++-------------------+--------+----------------------+
+; Clock             ; Slack  ; End Point TNS        ;
++-------------------+--------+----------------------+
+; clk               ; -0.354 ; -1.858               ;
+; ClkDivider:c0|tmp ; 0.036  ; 0.000                ;
++-------------------+--------+----------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Setup Times                                                                       ;
++--------------+-------------------+-------+-------+------------+-------------------+
+; Data Port    ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++--------------+-------------------+-------+-------+------------+-------------------+
+; DP           ; ClkDivider:c0|tmp ; 1.218 ; 1.729 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_data[*]  ; ClkDivider:c0|tmp ; 2.596 ; 3.507 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[0] ; ClkDivider:c0|tmp ; 1.951 ; 2.541 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[1] ; ClkDivider:c0|tmp ; 1.786 ; 2.448 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[2] ; ClkDivider:c0|tmp ; 2.596 ; 3.507 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[3] ; ClkDivider:c0|tmp ; 2.014 ; 2.568 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_sel[*]   ; ClkDivider:c0|tmp ; 2.496 ; 2.930 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[0]  ; ClkDivider:c0|tmp ; 2.281 ; 2.648 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[1]  ; ClkDivider:c0|tmp ; 2.233 ; 2.796 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[2]  ; ClkDivider:c0|tmp ; 2.496 ; 2.930 ; Rise       ; ClkDivider:c0|tmp ;
+; latch_en     ; ClkDivider:c0|tmp ; 2.405 ; 3.365 ; Rise       ; ClkDivider:c0|tmp ;
+; rst_n        ; ClkDivider:c0|tmp ; 3.291 ; 4.172 ; Rise       ; ClkDivider:c0|tmp ;
++--------------+-------------------+-------+-------+------------+-------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Hold Times                                                                          ;
++--------------+-------------------+--------+--------+------------+-------------------+
+; Data Port    ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++--------------+-------------------+--------+--------+------------+-------------------+
+; DP           ; ClkDivider:c0|tmp ; -0.752 ; -1.227 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_data[*]  ; ClkDivider:c0|tmp ; -0.623 ; -1.087 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[0] ; ClkDivider:c0|tmp ; -0.655 ; -1.140 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[1] ; ClkDivider:c0|tmp ; -0.623 ; -1.087 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[2] ; ClkDivider:c0|tmp ; -1.258 ; -1.913 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[3] ; ClkDivider:c0|tmp ; -0.872 ; -1.404 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_sel[*]   ; ClkDivider:c0|tmp ; -1.006 ; -1.511 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[0]  ; ClkDivider:c0|tmp ; -1.006 ; -1.511 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[1]  ; ClkDivider:c0|tmp ; -1.039 ; -1.604 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[2]  ; ClkDivider:c0|tmp ; -1.031 ; -1.513 ; Rise       ; ClkDivider:c0|tmp ;
+; latch_en     ; ClkDivider:c0|tmp ; -1.208 ; -1.769 ; Rise       ; ClkDivider:c0|tmp ;
+; rst_n        ; ClkDivider:c0|tmp ; -1.507 ; -2.355 ; Rise       ; ClkDivider:c0|tmp ;
++--------------+-------------------+--------+--------+------------+-------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                 ;
++------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port        ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++------------------+-------------------+-------+-------+------------+-------------------+
+; data_display[*]  ; ClkDivider:c0|tmp ; 7.133 ; 8.414 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 6.094 ; 7.333 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 7.133 ; 8.414 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 6.608 ; 7.820 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 6.781 ; 8.047 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 5.048 ; 5.585 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 5.978 ; 7.093 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 5.811 ; 6.380 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 4.906 ; 5.476 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_dis_sel[*]   ; ClkDivider:c0|tmp ; 7.553 ; 9.038 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[0]  ; ClkDivider:c0|tmp ; 7.553 ; 9.038 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[1]  ; ClkDivider:c0|tmp ; 6.400 ; 7.316 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[2]  ; ClkDivider:c0|tmp ; 6.410 ; 7.412 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[3]  ; ClkDivider:c0|tmp ; 6.703 ; 7.818 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[4]  ; ClkDivider:c0|tmp ; 6.289 ; 7.413 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[5]  ; ClkDivider:c0|tmp ; 5.559 ; 6.055 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[6]  ; ClkDivider:c0|tmp ; 7.217 ; 8.741 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[7]  ; ClkDivider:c0|tmp ; 6.186 ; 7.098 ; Fall       ; ClkDivider:c0|tmp ;
+; data_display[*]  ; ClkDivider:c0|tmp ; 6.954 ; 8.392 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 6.122 ; 7.388 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 6.954 ; 8.392 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 6.602 ; 8.025 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 6.679 ; 7.796 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 5.011 ; 5.741 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 6.017 ; 7.157 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 5.459 ; 5.976 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 4.831 ; 5.491 ; Fall       ; ClkDivider:c0|tmp ;
++------------------+-------------------+-------+-------+------------+-------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                         ;
++------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port        ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++------------------+-------------------+-------+-------+------------+-------------------+
+; data_display[*]  ; ClkDivider:c0|tmp ; 3.776 ; 4.186 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 5.016 ; 6.115 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 5.114 ; 6.126 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 5.271 ; 6.405 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 4.964 ; 5.870 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 3.776 ; 4.186 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 4.865 ; 5.784 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 4.017 ; 4.369 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 3.976 ; 4.412 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_dis_sel[*]   ; ClkDivider:c0|tmp ; 4.174 ; 4.687 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[0]  ; ClkDivider:c0|tmp ; 6.061 ; 7.314 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[1]  ; ClkDivider:c0|tmp ; 4.959 ; 5.743 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[2]  ; ClkDivider:c0|tmp ; 5.037 ; 5.870 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[3]  ; ClkDivider:c0|tmp ; 5.245 ; 6.252 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[4]  ; ClkDivider:c0|tmp ; 4.927 ; 5.928 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[5]  ; ClkDivider:c0|tmp ; 4.174 ; 4.687 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[6]  ; ClkDivider:c0|tmp ; 5.753 ; 7.186 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[7]  ; ClkDivider:c0|tmp ; 4.863 ; 5.710 ; Fall       ; ClkDivider:c0|tmp ;
+; data_display[*]  ; ClkDivider:c0|tmp ; 3.801 ; 4.269 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 4.997 ; 6.219 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 4.983 ; 6.056 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 5.169 ; 6.432 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 5.016 ; 6.087 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 3.801 ; 4.269 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 4.710 ; 5.745 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 3.920 ; 4.349 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 3.831 ; 4.384 ; Fall       ; ClkDivider:c0|tmp ;
++------------------+-------------------+-------+-------+------------+-------------------+
+
+
++----------------------------------------------------------------+
+; Propagation Delay                                              ;
++------------+-----------------+-------+--------+-------+--------+
+; Input Port ; Output Port     ; RR    ; RF     ; FR    ; FF     ;
++------------+-----------------+-------+--------+-------+--------+
+; rst_n      ; LED_dis_sel[0]  ;       ; 10.336 ; 9.795 ;        ;
+; rst_n      ; LED_dis_sel[1]  ; 7.644 ; 8.614  ; 8.642 ; 9.596  ;
+; rst_n      ; LED_dis_sel[2]  ; 7.708 ; 8.664  ; 8.643 ; 9.654  ;
+; rst_n      ; LED_dis_sel[3]  ; 7.985 ; 9.086  ; 8.974 ; 10.060 ;
+; rst_n      ; LED_dis_sel[4]  ; 7.697 ; 8.711  ; 8.531 ; 9.577  ;
+; rst_n      ; LED_dis_sel[5]  ; 6.804 ; 7.353  ; 7.801 ; 8.319  ;
+; rst_n      ; LED_dis_sel[6]  ; 8.547 ; 10.039 ; 9.527 ; 11.012 ;
+; rst_n      ; LED_dis_sel[7]  ; 7.522 ;        ;       ; 9.358  ;
+; rst_n      ; data_display[0] ;       ; 8.678  ; 8.553 ;        ;
+; rst_n      ; data_display[1] ;       ; 9.564  ; 9.585 ;        ;
+; rst_n      ; data_display[2] ; 7.623 ;        ;       ; 9.961  ;
+; rst_n      ; data_display[3] ; 7.850 ;        ;       ; 9.975  ;
+; rst_n      ; data_display[4] ; 6.022 ;        ;       ; 7.626  ;
+; rst_n      ; data_display[5] ; 6.990 ;        ;       ; 9.020  ;
+; rst_n      ; data_display[6] ; 6.638 ;        ;       ; 7.983  ;
+; rst_n      ; data_display[7] ; 6.074 ;        ;       ; 7.549  ;
++------------+-----------------+-------+--------+-------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-----------------+-------+-------+-------+-------+
+; Input Port ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
++------------+-----------------+-------+-------+-------+-------+
+; rst_n      ; LED_dis_sel[0]  ;       ; 8.834 ; 8.352 ;       ;
+; rst_n      ; LED_dis_sel[1]  ; 6.462 ; 7.263 ; 7.297 ; 8.153 ;
+; rst_n      ; LED_dis_sel[2]  ; 6.546 ; 7.385 ; 7.342 ; 8.268 ;
+; rst_n      ; LED_dis_sel[3]  ; 6.748 ; 7.788 ; 7.653 ; 8.576 ;
+; rst_n      ; LED_dis_sel[4]  ; 6.549 ; 7.431 ; 7.251 ; 8.237 ;
+; rst_n      ; LED_dis_sel[5]  ; 5.677 ; 6.200 ; 6.577 ; 7.011 ;
+; rst_n      ; LED_dis_sel[6]  ; 7.237 ; 8.689 ; 8.166 ; 9.491 ;
+; rst_n      ; LED_dis_sel[7]  ; 6.360 ;       ;       ; 7.995 ;
+; rst_n      ; data_display[0] ;       ; 7.965 ; 7.745 ;       ;
+; rst_n      ; data_display[1] ;       ; 8.195 ; 8.166 ;       ;
+; rst_n      ; data_display[2] ; 6.988 ;       ;       ; 9.034 ;
+; rst_n      ; data_display[3] ; 6.670 ;       ;       ; 8.524 ;
+; rst_n      ; data_display[4] ; 5.510 ;       ;       ; 6.873 ;
+; rst_n      ; data_display[5] ; 6.412 ;       ;       ; 8.184 ;
+; rst_n      ; data_display[6] ; 5.564 ;       ;       ; 6.733 ;
+; rst_n      ; data_display[7] ; 5.576 ;       ;       ; 6.861 ;
++------------+-----------------+-------+-------+-------+-------+
+
+
+----------------------------------------------
+; Fast 1100mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------+
+; Fast 1100mV 0C Model Setup Summary         ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; clk               ; -0.728 ; -9.311        ;
+; ClkDivider:c0|tmp ; -0.535 ; -21.676       ;
++-------------------+--------+---------------+
+
+
++--------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary          ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; clk               ; -0.753 ; -0.753        ;
+; ClkDivider:c0|tmp ; 0.042  ; 0.000         ;
++-------------------+--------+---------------+
+
+
+-----------------------------------------
+; Fast 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
++-------------------+--------+---------------------+
+; Clock             ; Slack  ; End Point TNS       ;
++-------------------+--------+---------------------+
+; clk               ; -0.342 ; -1.871              ;
+; ClkDivider:c0|tmp ; 0.057  ; 0.000               ;
++-------------------+--------+---------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Setup Times                                                                       ;
++--------------+-------------------+-------+-------+------------+-------------------+
+; Data Port    ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++--------------+-------------------+-------+-------+------------+-------------------+
+; DP           ; ClkDivider:c0|tmp ; 1.212 ; 1.715 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_data[*]  ; ClkDivider:c0|tmp ; 2.480 ; 3.295 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[0] ; ClkDivider:c0|tmp ; 1.913 ; 2.467 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[1] ; ClkDivider:c0|tmp ; 1.735 ; 2.361 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[2] ; ClkDivider:c0|tmp ; 2.480 ; 3.295 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[3] ; ClkDivider:c0|tmp ; 1.947 ; 2.497 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_sel[*]   ; ClkDivider:c0|tmp ; 2.358 ; 2.793 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[0]  ; ClkDivider:c0|tmp ; 2.164 ; 2.526 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[1]  ; ClkDivider:c0|tmp ; 2.111 ; 2.673 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[2]  ; ClkDivider:c0|tmp ; 2.358 ; 2.793 ; Rise       ; ClkDivider:c0|tmp ;
+; latch_en     ; ClkDivider:c0|tmp ; 2.288 ; 3.158 ; Rise       ; ClkDivider:c0|tmp ;
+; rst_n        ; ClkDivider:c0|tmp ; 3.075 ; 3.863 ; Rise       ; ClkDivider:c0|tmp ;
++--------------+-------------------+-------+-------+------------+-------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Hold Times                                                                          ;
++--------------+-------------------+--------+--------+------------+-------------------+
+; Data Port    ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++--------------+-------------------+--------+--------+------------+-------------------+
+; DP           ; ClkDivider:c0|tmp ; -0.766 ; -1.238 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_data[*]  ; ClkDivider:c0|tmp ; -0.635 ; -1.097 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[0] ; ClkDivider:c0|tmp ; -0.688 ; -1.160 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[1] ; ClkDivider:c0|tmp ; -0.635 ; -1.097 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[2] ; ClkDivider:c0|tmp ; -1.241 ; -1.853 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[3] ; ClkDivider:c0|tmp ; -0.869 ; -1.401 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_sel[*]   ; ClkDivider:c0|tmp ; -0.998 ; -1.497 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[0]  ; ClkDivider:c0|tmp ; -0.998 ; -1.497 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[1]  ; ClkDivider:c0|tmp ; -1.034 ; -1.579 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[2]  ; ClkDivider:c0|tmp ; -1.021 ; -1.498 ; Rise       ; ClkDivider:c0|tmp ;
+; latch_en     ; ClkDivider:c0|tmp ; -1.177 ; -1.722 ; Rise       ; ClkDivider:c0|tmp ;
+; rst_n        ; ClkDivider:c0|tmp ; -1.449 ; -2.218 ; Rise       ; ClkDivider:c0|tmp ;
++--------------+-------------------+--------+--------+------------+-------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                 ;
++------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port        ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++------------------+-------------------+-------+-------+------------+-------------------+
+; data_display[*]  ; ClkDivider:c0|tmp ; 6.571 ; 7.567 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 5.545 ; 6.524 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 6.571 ; 7.567 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 5.999 ; 6.923 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 6.241 ; 7.244 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 4.590 ; 4.991 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 5.438 ; 6.325 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 5.291 ; 5.778 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 4.423 ; 4.914 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_dis_sel[*]   ; ClkDivider:c0|tmp ; 6.986 ; 8.100 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[0]  ; ClkDivider:c0|tmp ; 6.986 ; 8.100 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[1]  ; ClkDivider:c0|tmp ; 5.902 ; 6.602 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[2]  ; ClkDivider:c0|tmp ; 5.892 ; 6.697 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[3]  ; ClkDivider:c0|tmp ; 6.156 ; 7.056 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[4]  ; ClkDivider:c0|tmp ; 5.820 ; 6.700 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[5]  ; ClkDivider:c0|tmp ; 5.086 ; 5.500 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[6]  ; ClkDivider:c0|tmp ; 6.646 ; 7.819 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[7]  ; ClkDivider:c0|tmp ; 5.691 ; 6.424 ; Fall       ; ClkDivider:c0|tmp ;
+; data_display[*]  ; ClkDivider:c0|tmp ; 6.430 ; 7.540 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 5.566 ; 6.542 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 6.430 ; 7.540 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 5.990 ; 7.097 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 6.142 ; 7.007 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 4.563 ; 5.136 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 5.466 ; 6.376 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 4.970 ; 5.414 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 4.345 ; 4.917 ; Fall       ; ClkDivider:c0|tmp ;
++------------------+-------------------+-------+-------+------------+-------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                         ;
++------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port        ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++------------------+-------------------+-------+-------+------------+-------------------+
+; data_display[*]  ; ClkDivider:c0|tmp ; 3.429 ; 3.733 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 4.555 ; 5.374 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 4.675 ; 5.428 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 4.781 ; 5.645 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 4.513 ; 5.192 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 3.429 ; 3.733 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 4.398 ; 5.103 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 3.584 ; 3.865 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 3.550 ; 3.918 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_dis_sel[*]   ; ClkDivider:c0|tmp ; 3.751 ; 4.165 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[0]  ; ClkDivider:c0|tmp ; 5.556 ; 6.485 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[1]  ; ClkDivider:c0|tmp ; 4.516 ; 5.122 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[2]  ; ClkDivider:c0|tmp ; 4.573 ; 5.239 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[3]  ; ClkDivider:c0|tmp ; 4.763 ; 5.536 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[4]  ; ClkDivider:c0|tmp ; 4.500 ; 5.269 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[5]  ; ClkDivider:c0|tmp ; 3.751 ; 4.165 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[6]  ; ClkDivider:c0|tmp ; 5.230 ; 6.345 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[7]  ; ClkDivider:c0|tmp ; 4.432 ; 5.071 ; Fall       ; ClkDivider:c0|tmp ;
+; data_display[*]  ; ClkDivider:c0|tmp ; 3.417 ; 3.812 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 4.537 ; 5.468 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 4.569 ; 5.368 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 4.683 ; 5.659 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 4.574 ; 5.397 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 3.465 ; 3.812 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 4.262 ; 5.073 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 3.495 ; 3.851 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 3.417 ; 3.887 ; Fall       ; ClkDivider:c0|tmp ;
++------------------+-------------------+-------+-------+------------+-------------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-----------------+-------+-------+-------+-------+
+; Input Port ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
++------------+-----------------+-------+-------+-------+-------+
+; rst_n      ; LED_dis_sel[0]  ;       ; 9.361 ; 9.082 ;       ;
+; rst_n      ; LED_dis_sel[1]  ; 7.109 ; 7.861 ; 7.998 ; 8.738 ;
+; rst_n      ; LED_dis_sel[2]  ; 7.151 ; 7.916 ; 7.981 ; 8.793 ;
+; rst_n      ; LED_dis_sel[3]  ; 7.400 ; 8.286 ; 8.288 ; 9.152 ;
+; rst_n      ; LED_dis_sel[4]  ; 7.180 ; 7.959 ; 7.916 ; 8.740 ;
+; rst_n      ; LED_dis_sel[5]  ; 6.293 ; 6.759 ; 7.182 ; 7.624 ;
+; rst_n      ; LED_dis_sel[6]  ; 7.943 ; 9.094 ; 8.807 ; 9.951 ;
+; rst_n      ; LED_dis_sel[7]  ; 6.999 ;       ;       ; 8.531 ;
+; rst_n      ; data_display[0] ;       ; 7.825 ; 7.846 ;       ;
+; rst_n      ; data_display[1] ;       ; 8.709 ; 8.855 ;       ;
+; rst_n      ; data_display[2] ; 7.022 ;       ;       ; 8.942 ;
+; rst_n      ; data_display[3] ; 7.298 ;       ;       ; 9.061 ;
+; rst_n      ; data_display[4] ; 5.578 ;       ;       ; 6.932 ;
+; rst_n      ; data_display[5] ; 6.436 ;       ;       ; 8.144 ;
+; rst_n      ; data_display[6] ; 6.121 ;       ;       ; 7.303 ;
+; rst_n      ; data_display[7] ; 5.558 ;       ;       ; 6.853 ;
++------------+-----------------+-------+-------+-------+-------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-----------------+-------+-------+-------+-------+
+; Input Port ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
++------------+-----------------+-------+-------+-------+-------+
+; rst_n      ; LED_dis_sel[0]  ;       ; 7.926 ; 7.700 ;       ;
+; rst_n      ; LED_dis_sel[1]  ; 5.960 ; 6.563 ; 6.705 ; 7.359 ;
+; rst_n      ; LED_dis_sel[2]  ; 6.027 ; 6.682 ; 6.731 ; 7.481 ;
+; rst_n      ; LED_dis_sel[3]  ; 6.207 ; 7.037 ; 7.034 ; 7.721 ;
+; rst_n      ; LED_dis_sel[4]  ; 6.067 ; 6.713 ; 6.685 ; 7.454 ;
+; rst_n      ; LED_dis_sel[5]  ; 5.195 ; 5.637 ; 6.021 ; 6.350 ;
+; rst_n      ; LED_dis_sel[6]  ; 6.658 ; 7.789 ; 7.510 ; 8.492 ;
+; rst_n      ; LED_dis_sel[7]  ; 5.860 ;       ;       ; 7.230 ;
+; rst_n      ; data_display[0] ;       ; 7.141 ; 7.108 ;       ;
+; rst_n      ; data_display[1] ;       ; 7.396 ; 7.524 ;       ;
+; rst_n      ; data_display[2] ; 6.433 ;       ;       ; 8.109 ;
+; rst_n      ; data_display[3] ; 6.159 ;       ;       ; 7.694 ;
+; rst_n      ; data_display[4] ; 5.101 ;       ;       ; 6.261 ;
+; rst_n      ; data_display[5] ; 5.891 ;       ;       ; 7.368 ;
+; rst_n      ; data_display[6] ; 5.083 ;       ;       ; 6.100 ;
+; rst_n      ; data_display[7] ; 5.097 ;       ;       ; 6.228 ;
++------------+-----------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1100mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                               ;
++--------------------+----------+--------+----------+---------+---------------------+
+; Clock              ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------+----------+--------+----------+---------+---------------------+
+; Worst-case Slack   ; -2.988   ; -1.837 ; N/A      ; N/A     ; -0.724              ;
+;  ClkDivider:c0|tmp ; -2.024   ; 0.005  ; N/A      ; N/A     ; -0.724              ;
+;  clk               ; -2.988   ; -1.837 ; N/A      ; N/A     ; -0.724              ;
+; Design-wide TNS    ; -161.838 ; -1.837 ; 0.0      ; 0.0     ; -114.294            ;
+;  ClkDivider:c0|tmp ; -113.977 ; 0.000  ; N/A      ; N/A     ; -95.345             ;
+;  clk               ; -48.979  ; -1.837 ; N/A      ; N/A     ; -18.949             ;
++--------------------+----------+--------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Setup Times                                                                       ;
++--------------+-------------------+-------+-------+------------+-------------------+
+; Data Port    ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++--------------+-------------------+-------+-------+------------+-------------------+
+; DP           ; ClkDivider:c0|tmp ; 2.817 ; 3.003 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_data[*]  ; ClkDivider:c0|tmp ; 5.731 ; 6.453 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[0] ; ClkDivider:c0|tmp ; 4.637 ; 4.898 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[1] ; ClkDivider:c0|tmp ; 4.299 ; 4.591 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[2] ; ClkDivider:c0|tmp ; 5.731 ; 6.453 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[3] ; ClkDivider:c0|tmp ; 4.971 ; 5.091 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_sel[*]   ; ClkDivider:c0|tmp ; 5.758 ; 5.893 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[0]  ; ClkDivider:c0|tmp ; 5.131 ; 5.110 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[1]  ; ClkDivider:c0|tmp ; 4.919 ; 5.231 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[2]  ; ClkDivider:c0|tmp ; 5.758 ; 5.893 ; Rise       ; ClkDivider:c0|tmp ;
+; latch_en     ; ClkDivider:c0|tmp ; 5.694 ; 6.272 ; Rise       ; ClkDivider:c0|tmp ;
+; rst_n        ; ClkDivider:c0|tmp ; 7.278 ; 7.948 ; Rise       ; ClkDivider:c0|tmp ;
++--------------+-------------------+-------+-------+------------+-------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Hold Times                                                                          ;
++--------------+-------------------+--------+--------+------------+-------------------+
+; Data Port    ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++--------------+-------------------+--------+--------+------------+-------------------+
+; DP           ; ClkDivider:c0|tmp ; -0.752 ; -1.227 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_data[*]  ; ClkDivider:c0|tmp ; -0.623 ; -1.087 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[0] ; ClkDivider:c0|tmp ; -0.655 ; -1.140 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[1] ; ClkDivider:c0|tmp ; -0.623 ; -1.087 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[2] ; ClkDivider:c0|tmp ; -1.241 ; -1.853 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_data[3] ; ClkDivider:c0|tmp ; -0.869 ; -1.401 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_sel[*]   ; ClkDivider:c0|tmp ; -0.998 ; -1.497 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[0]  ; ClkDivider:c0|tmp ; -0.998 ; -1.497 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[1]  ; ClkDivider:c0|tmp ; -1.034 ; -1.579 ; Rise       ; ClkDivider:c0|tmp ;
+;  LED_sel[2]  ; ClkDivider:c0|tmp ; -1.021 ; -1.498 ; Rise       ; ClkDivider:c0|tmp ;
+; latch_en     ; ClkDivider:c0|tmp ; -1.177 ; -1.722 ; Rise       ; ClkDivider:c0|tmp ;
+; rst_n        ; ClkDivider:c0|tmp ; -1.449 ; -2.218 ; Rise       ; ClkDivider:c0|tmp ;
++--------------+-------------------+--------+--------+------------+-------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                   ;
++------------------+-------------------+--------+--------+------------+-------------------+
+; Data Port        ; Clock Port        ; Rise   ; Fall   ; Clock Edge ; Clock Reference   ;
++------------------+-------------------+--------+--------+------------+-------------------+
+; data_display[*]  ; ClkDivider:c0|tmp ; 15.019 ; 16.479 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 12.451 ; 13.819 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 15.019 ; 16.479 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 13.366 ; 14.807 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 14.370 ; 15.772 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 10.681 ; 11.222 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 12.417 ; 13.594 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 13.021 ; 13.548 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 10.867 ; 11.361 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_dis_sel[*]   ; ClkDivider:c0|tmp ; 15.555 ; 17.333 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[0]  ; ClkDivider:c0|tmp ; 15.555 ; 17.333 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[1]  ; ClkDivider:c0|tmp ; 13.918 ; 14.935 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[2]  ; ClkDivider:c0|tmp ; 13.770 ; 14.812 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[3]  ; ClkDivider:c0|tmp ; 14.216 ; 15.521 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[4]  ; ClkDivider:c0|tmp ; 13.487 ; 14.713 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[5]  ; ClkDivider:c0|tmp ; 12.507 ; 13.004 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[6]  ; ClkDivider:c0|tmp ; 14.817 ; 16.572 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[7]  ; ClkDivider:c0|tmp ; 13.188 ; 14.246 ; Fall       ; ClkDivider:c0|tmp ;
+; data_display[*]  ; ClkDivider:c0|tmp ; 14.879 ; 16.273 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 12.241 ; 13.780 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 14.879 ; 16.273 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 13.245 ; 14.934 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 13.976 ; 15.306 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 10.596 ; 11.384 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 12.470 ; 13.717 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 12.173 ; 12.653 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 10.707 ; 11.265 ; Fall       ; ClkDivider:c0|tmp ;
++------------------+-------------------+--------+--------+------------+-------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                         ;
++------------------+-------------------+-------+-------+------------+-------------------+
+; Data Port        ; Clock Port        ; Rise  ; Fall  ; Clock Edge ; Clock Reference   ;
++------------------+-------------------+-------+-------+------------+-------------------+
+; data_display[*]  ; ClkDivider:c0|tmp ; 3.429 ; 3.733 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 4.555 ; 5.374 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 4.675 ; 5.428 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 4.781 ; 5.645 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 4.513 ; 5.192 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 3.429 ; 3.733 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 4.398 ; 5.103 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 3.584 ; 3.865 ; Rise       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 3.550 ; 3.918 ; Rise       ; ClkDivider:c0|tmp ;
+; LED_dis_sel[*]   ; ClkDivider:c0|tmp ; 3.751 ; 4.165 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[0]  ; ClkDivider:c0|tmp ; 5.556 ; 6.485 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[1]  ; ClkDivider:c0|tmp ; 4.516 ; 5.122 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[2]  ; ClkDivider:c0|tmp ; 4.573 ; 5.239 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[3]  ; ClkDivider:c0|tmp ; 4.763 ; 5.536 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[4]  ; ClkDivider:c0|tmp ; 4.500 ; 5.269 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[5]  ; ClkDivider:c0|tmp ; 3.751 ; 4.165 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[6]  ; ClkDivider:c0|tmp ; 5.230 ; 6.345 ; Fall       ; ClkDivider:c0|tmp ;
+;  LED_dis_sel[7]  ; ClkDivider:c0|tmp ; 4.432 ; 5.071 ; Fall       ; ClkDivider:c0|tmp ;
+; data_display[*]  ; ClkDivider:c0|tmp ; 3.417 ; 3.812 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[0] ; ClkDivider:c0|tmp ; 4.537 ; 5.468 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[1] ; ClkDivider:c0|tmp ; 4.569 ; 5.368 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[2] ; ClkDivider:c0|tmp ; 4.683 ; 5.659 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[3] ; ClkDivider:c0|tmp ; 4.574 ; 5.397 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[4] ; ClkDivider:c0|tmp ; 3.465 ; 3.812 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[5] ; ClkDivider:c0|tmp ; 4.262 ; 5.073 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[6] ; ClkDivider:c0|tmp ; 3.495 ; 3.851 ; Fall       ; ClkDivider:c0|tmp ;
+;  data_display[7] ; ClkDivider:c0|tmp ; 3.417 ; 3.887 ; Fall       ; ClkDivider:c0|tmp ;
++------------------+-------------------+-------+-------+------------+-------------------+
+
+
++------------------------------------------------------------------+
+; Progagation Delay                                                ;
++------------+-----------------+--------+--------+--------+--------+
+; Input Port ; Output Port     ; RR     ; RF     ; FR     ; FF     ;
++------------+-----------------+--------+--------+--------+--------+
+; rst_n      ; LED_dis_sel[0]  ;        ; 19.892 ; 18.668 ;        ;
+; rst_n      ; LED_dis_sel[1]  ; 16.263 ; 17.494 ; 17.031 ; 18.015 ;
+; rst_n      ; LED_dis_sel[2]  ; 16.329 ; 17.232 ; 16.740 ; 17.925 ;
+; rst_n      ; LED_dis_sel[3]  ; 16.775 ; 18.064 ; 17.441 ; 18.634 ;
+; rst_n      ; LED_dis_sel[4]  ; 16.243 ; 17.272 ; 16.600 ; 17.803 ;
+; rst_n      ; LED_dis_sel[5]  ; 14.857 ; 15.563 ; 15.620 ; 16.055 ;
+; rst_n      ; LED_dis_sel[6]  ; 17.434 ; 19.215 ; 18.035 ; 19.803 ;
+; rst_n      ; LED_dis_sel[7]  ; 15.852 ;        ;        ; 17.376 ;
+; rst_n      ; data_display[0] ;        ; 16.430 ; 15.757 ;        ;
+; rst_n      ; data_display[1] ;        ; 18.953 ; 18.397 ;        ;
+; rst_n      ; data_display[2] ; 15.247 ;        ;        ; 17.505 ;
+; rst_n      ; data_display[3] ; 16.387 ;        ;        ; 18.349 ;
+; rst_n      ; data_display[4] ; 12.531 ;        ;        ; 13.856 ;
+; rst_n      ; data_display[5] ; 14.153 ;        ;        ; 16.007 ;
+; rst_n      ; data_display[6] ; 14.318 ;        ;        ; 15.296 ;
+; rst_n      ; data_display[7] ; 12.955 ;        ;        ; 14.032 ;
++------------+-----------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Progagation Delay                                    ;
++------------+-----------------+-------+-------+-------+-------+
+; Input Port ; Output Port     ; RR    ; RF    ; FR    ; FF    ;
++------------+-----------------+-------+-------+-------+-------+
+; rst_n      ; LED_dis_sel[0]  ;       ; 7.926 ; 7.700 ;       ;
+; rst_n      ; LED_dis_sel[1]  ; 5.960 ; 6.563 ; 6.705 ; 7.359 ;
+; rst_n      ; LED_dis_sel[2]  ; 6.027 ; 6.682 ; 6.731 ; 7.481 ;
+; rst_n      ; LED_dis_sel[3]  ; 6.207 ; 7.037 ; 7.034 ; 7.721 ;
+; rst_n      ; LED_dis_sel[4]  ; 6.067 ; 6.713 ; 6.685 ; 7.454 ;
+; rst_n      ; LED_dis_sel[5]  ; 5.195 ; 5.637 ; 6.021 ; 6.350 ;
+; rst_n      ; LED_dis_sel[6]  ; 6.658 ; 7.789 ; 7.510 ; 8.492 ;
+; rst_n      ; LED_dis_sel[7]  ; 5.860 ;       ;       ; 7.230 ;
+; rst_n      ; data_display[0] ;       ; 7.141 ; 7.108 ;       ;
+; rst_n      ; data_display[1] ;       ; 7.396 ; 7.524 ;       ;
+; rst_n      ; data_display[2] ; 6.433 ;       ;       ; 8.109 ;
+; rst_n      ; data_display[3] ; 6.159 ;       ;       ; 7.694 ;
+; rst_n      ; data_display[4] ; 5.101 ;       ;       ; 6.261 ;
+; rst_n      ; data_display[5] ; 5.891 ;       ;       ; 7.368 ;
+; rst_n      ; data_display[6] ; 5.083 ;       ;       ; 6.100 ;
+; rst_n      ; data_display[7] ; 5.097 ;       ;       ; 6.228 ;
++------------+-----------------+-------+-------+-------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                      ;
++-----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin             ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++-----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; data_display[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; data_display[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; data_display[2] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; data_display[3] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; data_display[4] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; data_display[5] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; data_display[6] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; data_display[7] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_dis_sel[0]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_dis_sel[1]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_dis_sel[2]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_dis_sel[3]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_dis_sel[4]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_dis_sel[5]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_dis_sel[6]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_dis_sel[7]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++-----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------+
+; Input Transition Times                                         ;
++-------------+--------------+-----------------+-----------------+
+; Pin         ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------+--------------+-----------------+-----------------+
+; rst_n       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LED_sel[1]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LED_sel[2]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LED_sel[0]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; latch_en    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; DP          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LED_data[0] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LED_data[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LED_data[2] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LED_data[3] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------+--------------+-----------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin             ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; data_display[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.86e-08 V                   ; 2.4 V               ; -0.0326 V           ; 0.227 V                              ; 0.16 V                               ; 4.73e-10 s                  ; 4.78e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.86e-08 V                  ; 2.4 V              ; -0.0326 V          ; 0.227 V                             ; 0.16 V                              ; 4.73e-10 s                 ; 4.78e-10 s                 ; No                        ; Yes                       ;
+; data_display[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.041 V            ; 0.19 V                               ; 0.126 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.041 V           ; 0.19 V                              ; 0.126 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
+; data_display[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; data_display[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; data_display[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; data_display[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.86e-08 V                   ; 2.4 V               ; -0.0326 V           ; 0.227 V                              ; 0.16 V                               ; 4.73e-10 s                  ; 4.78e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.86e-08 V                  ; 2.4 V              ; -0.0326 V          ; 0.227 V                             ; 0.16 V                              ; 4.73e-10 s                 ; 4.78e-10 s                 ; No                        ; Yes                       ;
+; data_display[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; data_display[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; LED_dis_sel[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.041 V            ; 0.19 V                               ; 0.126 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.041 V           ; 0.19 V                              ; 0.126 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.0409 V           ; 0.192 V                              ; 0.125 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.0409 V          ; 0.192 V                             ; 0.125 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.86e-08 V                   ; 2.4 V               ; -0.0326 V           ; 0.227 V                              ; 0.16 V                               ; 4.73e-10 s                  ; 4.78e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.86e-08 V                  ; 2.4 V              ; -0.0326 V          ; 0.227 V                             ; 0.16 V                              ; 4.73e-10 s                 ; 4.78e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; LED_dis_sel[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.041 V            ; 0.19 V                               ; 0.126 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.041 V           ; 0.19 V                              ; 0.126 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[5]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; LED_dis_sel[6]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.86e-08 V                   ; 2.4 V               ; -0.0326 V           ; 0.227 V                              ; 0.16 V                               ; 4.73e-10 s                  ; 4.78e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.86e-08 V                  ; 2.4 V              ; -0.0326 V          ; 0.227 V                             ; 0.16 V                              ; 4.73e-10 s                 ; 4.78e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[7]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin             ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; data_display[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.05e-05 V                   ; 2.37 V              ; -0.0225 V           ; 0.277 V                              ; 0.104 V                              ; 5.22e-10 s                  ; 6.28e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.05e-05 V                  ; 2.37 V             ; -0.0225 V          ; 0.277 V                             ; 0.104 V                             ; 5.22e-10 s                 ; 6.28e-10 s                 ; No                        ; Yes                       ;
+; data_display[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.0273 V           ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.0273 V          ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; data_display[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; data_display[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; data_display[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; data_display[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.05e-05 V                   ; 2.37 V              ; -0.0225 V           ; 0.277 V                              ; 0.104 V                              ; 5.22e-10 s                  ; 6.28e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.05e-05 V                  ; 2.37 V             ; -0.0225 V          ; 0.277 V                             ; 0.104 V                             ; 5.22e-10 s                 ; 6.28e-10 s                 ; No                        ; Yes                       ;
+; data_display[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; data_display[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.0273 V           ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.0273 V          ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.027 V            ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.18e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.027 V           ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.18e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.05e-05 V                   ; 2.37 V              ; -0.0225 V           ; 0.277 V                              ; 0.104 V                              ; 5.22e-10 s                  ; 6.28e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.05e-05 V                  ; 2.37 V             ; -0.0225 V          ; 0.277 V                             ; 0.104 V                             ; 5.22e-10 s                 ; 6.28e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.0273 V           ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.0273 V          ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[5]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[6]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.05e-05 V                   ; 2.37 V              ; -0.0225 V           ; 0.277 V                              ; 0.104 V                              ; 5.22e-10 s                  ; 6.28e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.05e-05 V                  ; 2.37 V             ; -0.0225 V          ; 0.277 V                             ; 0.104 V                             ; 5.22e-10 s                 ; 6.28e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[7]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin             ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; data_display[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; data_display[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; data_display[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; data_display[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; data_display[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; data_display[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; data_display[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; data_display[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; LED_dis_sel[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; LED_dis_sel[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; LED_dis_sel[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; LED_dis_sel[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; LED_dis_sel[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; LED_dis_sel[5]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; LED_dis_sel[6]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; LED_dis_sel[7]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin             ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; data_display[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; data_display[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; data_display[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; data_display[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; data_display[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; data_display[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; data_display[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; data_display[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; LED_dis_sel[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; LED_dis_sel[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; LED_dis_sel[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; LED_dis_sel[5]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; LED_dis_sel[6]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; LED_dis_sel[7]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Setup Transfers                                                                   ;
++-------------------+-------------------+----------+----------+----------+----------+
+; From Clock        ; To Clock          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------+-------------------+----------+----------+----------+----------+
+; clk               ; clk               ; 392      ; 0        ; 0        ; 0        ;
+; ClkDivider:c0|tmp ; clk               ; 1        ; 1        ; 0        ; 0        ;
+; ClkDivider:c0|tmp ; ClkDivider:c0|tmp ; 64       ; 0        ; 0        ; 10       ;
++-------------------+-------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------+
+; Hold Transfers                                                                    ;
++-------------------+-------------------+----------+----------+----------+----------+
+; From Clock        ; To Clock          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------+-------------------+----------+----------+----------+----------+
+; clk               ; clk               ; 392      ; 0        ; 0        ; 0        ;
+; ClkDivider:c0|tmp ; clk               ; 1        ; 1        ; 0        ; 0        ;
+; ClkDivider:c0|tmp ; ClkDivider:c0|tmp ; 64       ; 0        ; 0        ; 10       ;
++-------------------+-------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 392   ; 392  ;
+; Unconstrained Output Ports      ; 16    ; 16   ;
+; Unconstrained Output Port Paths ; 200   ; 200  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Tue Nov 03 21:29:39 2020
+Info: Command: quartus_sta Ex_3 -c Ex_3
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Ex_3.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name ClkDivider:c0|tmp ClkDivider:c0|tmp
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1100mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.935
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.935       -47.861 clk 
+    Info (332119):    -2.024      -113.977 ClkDivider:c0|tmp 
+Info (332146): Worst-case hold slack is -1.676
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.676        -1.676 clk 
+    Info (332119):     0.005         0.000 ClkDivider:c0|tmp 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.724
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.724       -95.345 ClkDivider:c0|tmp 
+    Info (332119):    -0.724       -18.949 clk 
+Info: Analyzing Slow 1100mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.988
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.988       -48.979 clk 
+    Info (332119):    -1.980      -108.844 ClkDivider:c0|tmp 
+Info (332146): Worst-case hold slack is -1.837
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.837        -1.837 clk 
+    Info (332119):     0.064         0.000 ClkDivider:c0|tmp 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.724
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.724       -93.928 ClkDivider:c0|tmp 
+    Info (332119):    -0.724       -18.856 clk 
+Info: Analyzing Fast 1100mV 85C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.764
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.764       -10.733 clk 
+    Info (332119):    -0.646       -27.124 ClkDivider:c0|tmp 
+Info (332146): Worst-case hold slack is -0.676
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.676        -0.676 clk 
+    Info (332119):     0.050         0.000 ClkDivider:c0|tmp 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.354
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.354        -1.858 clk 
+    Info (332119):     0.036         0.000 ClkDivider:c0|tmp 
+Info: Analyzing Fast 1100mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.728
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.728        -9.311 clk 
+    Info (332119):    -0.535       -21.676 ClkDivider:c0|tmp 
+Info (332146): Worst-case hold slack is -0.753
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.753        -0.753 clk 
+    Info (332119):     0.042         0.000 ClkDivider:c0|tmp 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.342
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.342        -1.871 clk 
+    Info (332119):     0.057         0.000 ClkDivider:c0|tmp 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 1014 megabytes
+    Info: Processing ended: Tue Nov 03 21:29:46 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
+
+

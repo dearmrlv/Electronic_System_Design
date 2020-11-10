@@ -76,7 +76,7 @@ constant DIS_9 : STD_LOGIC_VECTOR := "0000100";    -- Show "9" on the 7-segment 
 constant DIS_a : STD_LOGIC_VECTOR := "1100010";    -- Show "a" on the 7-segment LED
 constant DIS_b : STD_LOGIC_VECTOR := "1100000";    -- Show "b" on the 7-segment LED
 constant DIS_c : STD_LOGIC_VECTOR := "1110010";    -- Show "c" on the 7-segment LED
-constant DIS_d : STD_LOGIC_VECTOR := "1000001";    -- Show "d" on the 7-segment LED
+constant DIS_d : STD_LOGIC_VECTOR := "1000010";    -- Show "d" on the 7-segment LED
 constant DIS_e : STD_LOGIC_VECTOR := "0010000";    -- Show "e" on the 7-segment LED
 constant DIS_f : STD_LOGIC_VECTOR := "0111000";    -- Show "f" on the 7-segment LED
 --------------------------------------------- LED Select(OUTPUT)
