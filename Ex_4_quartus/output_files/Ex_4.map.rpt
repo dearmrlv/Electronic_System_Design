@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ex_4
-Tue Nov 10 17:31:08 2020
+Tue Nov 10 20:53:13 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -14,11 +14,12 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |KeyBoard_TOP|ColScan:CS0|CrST
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,14 +45,14 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                           ;
 +-------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status         ; Successful - Tue Nov 10 17:31:08 2020            ;
+; Analysis & Synthesis Status         ; Successful - Tue Nov 10 20:53:13 2020            ;
 ; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                       ; Ex_4                                             ;
 ; Top-level Entity Name               ; KeyBoard_TOP                                     ;
 ; Family                              ; Cyclone V                                        ;
 ; Logic utilization (in ALMs)         ; N/A                                              ;
-; Total registers                     ; 85                                               ;
-; Total pins                          ; 15                                               ;
+; Total registers                     ; 107                                              ;
+; Total pins                          ; 18                                               ;
 ; Total virtual pins                  ; 0                                                ;
 ; Total block memory bits             ; 0                                                ;
 ; Total DSP Blocks                    ; 0                                                ;
@@ -170,17 +171,18 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                  ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
-; codes/RowScan.vhd                ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/RowScan.vhd    ;         ;
-; codes/ColScan.vhd                ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/codes/ColScan.vhd    ;         ;
-; KeyBoardPack.vhd                 ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/KeyBoardPack.vhd     ;         ;
-; JitterEliminator.vhd             ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/JitterEliminator.vhd ;         ;
-; KeyBoard_TOP.vhd                 ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VHDL_projects/Codes/Electronic_System_Design/Ex_4_quartus/KeyBoard_TOP.vhd     ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                           ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                    ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
+; KeyBoard_TOP.vhd                 ; yes             ; User VHDL File  ; C:/Users/liyh/Desktop/Ex_4/KeyBoard_TOP.vhd     ;         ;
+; KeyBoardPack.vhd                 ; yes             ; User VHDL File  ; C:/Users/liyh/Desktop/Ex_4/KeyBoardPack.vhd     ;         ;
+; JitterEliminator.vhd             ; yes             ; User VHDL File  ; C:/Users/liyh/Desktop/Ex_4/JitterEliminator.vhd ;         ;
+; ColScan.vhd                      ; yes             ; User VHDL File  ; C:/Users/liyh/Desktop/Ex_4/ColScan.vhd          ;         ;
+; RowScan.vhd                      ; yes             ; User VHDL File  ; C:/Users/liyh/Desktop/Ex_4/RowScan.vhd          ;         ;
+; LED_Output.vhd                   ; yes             ; User VHDL File  ; C:/Users/liyh/Desktop/Ex_4/LED_Output.vhd       ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -188,23 +190,23 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 67        ;
+; Estimate of Logic utilization (ALMs needed) ; 85        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 113       ;
+; Combinational ALUT usage for logic          ; 151       ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 19        ;
-;     -- 5 input functions                    ; 13        ;
-;     -- 4 input functions                    ; 4         ;
-;     -- <=3 input functions                  ; 77        ;
+;     -- 6 input functions                    ; 18        ;
+;     -- 5 input functions                    ; 6         ;
+;     -- 4 input functions                    ; 24        ;
+;     -- <=3 input functions                  ; 103       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 85        ;
+; Dedicated logic registers                   ; 107       ;
 ;                                             ;           ;
-; I/O pins                                    ; 15        ;
+; I/O pins                                    ; 18        ;
 ; Total DSP Blocks                            ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 85        ;
-; Total fan-out                               ; 696       ;
-; Average fan-out                             ; 3.05      ;
+; Maximum fan-out                             ; 107       ;
+; Total fan-out                               ; 963       ;
+; Average fan-out                             ; 3.28      ;
 +---------------------------------------------+-----------+
 
 
@@ -213,13 +215,14 @@ applicable agreement for further details.
 +-----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
 ; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Library Name ;
 +-----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
-; |KeyBoard_TOP               ; 113 (0)           ; 85 (0)       ; 0                 ; 0          ; 15   ; 0            ; |KeyBoard_TOP                                 ; work         ;
-;    |ColScan:CS0|            ; 12 (12)           ; 12 (12)      ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|ColScan:CS0                     ; work         ;
-;    |RowScan:RS0|            ; 101 (9)           ; 73 (5)       ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|RowScan:RS0                     ; work         ;
-;       |JitterEliminator:J0| ; 23 (23)           ; 17 (17)      ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J0 ; work         ;
-;       |JitterEliminator:J1| ; 23 (23)           ; 17 (17)      ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J1 ; work         ;
-;       |JitterEliminator:J2| ; 23 (23)           ; 17 (17)      ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J2 ; work         ;
-;       |JitterEliminator:J3| ; 23 (23)           ; 17 (17)      ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J3 ; work         ;
+; |KeyBoard_TOP               ; 151 (0)           ; 107 (0)      ; 0                 ; 0          ; 18   ; 0            ; |KeyBoard_TOP                                 ; work         ;
+;    |ColScan:CS0|            ; 14 (14)           ; 14 (14)      ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|ColScan:CS0                     ; work         ;
+;    |LED_Output:LO0|         ; 7 (7)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|LED_Output:LO0                  ; work         ;
+;    |RowScan:RS0|            ; 130 (18)          ; 89 (5)       ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|RowScan:RS0                     ; work         ;
+;       |JitterEliminator:J0| ; 28 (28)           ; 21 (21)      ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J0 ; work         ;
+;       |JitterEliminator:J1| ; 28 (28)           ; 21 (21)      ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J1 ; work         ;
+;       |JitterEliminator:J2| ; 28 (28)           ; 21 (21)      ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J2 ; work         ;
+;       |JitterEliminator:J3| ; 28 (28)           ; 21 (21)      ; 0                 ; 0          ; 0    ; 0            ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J3 ; work         ;
 +-----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -237,17 +240,27 @@ Encoding Type:  One-Hot
 +---------+---------+---------+---------+---------+
 
 
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; LED_Output:LO0|LED_data[4]            ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 85    ;
-; Number of registers using Synchronous Clear  ; 8     ;
+; Total registers                              ; 107   ;
+; Number of registers using Synchronous Clear  ; 90    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 85    ;
+; Number of registers using Asynchronous Clear ; 107   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 60    ;
+; Number of registers using Clock Enable       ; 88    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -257,21 +270,28 @@ Encoding Type:  One-Hot
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; RowScan:RS0|JitterEliminator:J0|Sig_out ; 7       ;
-; RowScan:RS0|JitterEliminator:J1|Sig_out ; 7       ;
-; RowScan:RS0|JitterEliminator:J2|Sig_out ; 7       ;
-; RowScan:RS0|JitterEliminator:J3|Sig_out ; 7       ;
+; RowScan:RS0|JitterEliminator:J0|Sig_out ; 11      ;
+; RowScan:RS0|JitterEliminator:J1|Sig_out ; 10      ;
+; RowScan:RS0|JitterEliminator:J2|Sig_out ; 10      ;
+; RowScan:RS0|JitterEliminator:J3|Sig_out ; 11      ;
 ; Total number of inverted registers = 4  ;         ;
 +-----------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |KeyBoard_TOP|RowScan:RS0|KeySel[1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J3|cnt_L[2] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J2|cnt_L[9] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J1|cnt_L[0] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J0|cnt_L[0] ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J3|cnt_H[8] ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J2|cnt_H[1] ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J1|cnt_H[0] ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |KeyBoard_TOP|RowScan:RS0|JitterEliminator:J0|cnt_H[7] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 
 
 +-------------------------------+
@@ -289,41 +309,50 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Nov 10 17:31:05 2020
+    Info: Processing started: Tue Nov 10 20:53:11 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ex_4 -c Ex_4
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12021): Found 2 design units, including 1 entities, in source file codes/top_tb.vhd
-    Info (12022): Found design unit 1: top_tb-arc_top_tb
-    Info (12023): Found entity 1: top_tb
-Info (12021): Found 2 design units, including 1 entities, in source file codes/rowscan.vhd
-    Info (12022): Found design unit 1: RowScan-Behavioral
-    Info (12023): Found entity 1: RowScan
-Info (12021): Found 2 design units, including 1 entities, in source file codes/colscan.vhd
-    Info (12022): Found design unit 1: ColScan-Behavioral
-    Info (12023): Found entity 1: ColScan
+Info (12021): Found 2 design units, including 1 entities, in source file keyboard_top.vhd
+    Info (12022): Found design unit 1: keyBoard_TOP-Behavioral
+    Info (12023): Found entity 1: KeyBoard_TOP
 Info (12021): Found 1 design units, including 0 entities, in source file keyboardpack.vhd
     Info (12022): Found design unit 1: KeyBoardPack
 Info (12021): Found 2 design units, including 1 entities, in source file jittereliminator.vhd
     Info (12022): Found design unit 1: JitterEliminator-Behavioral
     Info (12023): Found entity 1: JitterEliminator
-Info (12021): Found 2 design units, including 1 entities, in source file keyboard_top.vhd
-    Info (12022): Found design unit 1: keyBoard_TOP-Behavioral
-    Info (12023): Found entity 1: KeyBoard_TOP
+Info (12021): Found 2 design units, including 1 entities, in source file colscan.vhd
+    Info (12022): Found design unit 1: ColScan-Behavioral
+    Info (12023): Found entity 1: ColScan
+Info (12021): Found 2 design units, including 1 entities, in source file rowscan.vhd
+    Info (12022): Found design unit 1: RowScan-Behavioral
+    Info (12023): Found entity 1: RowScan
+Info (12021): Found 2 design units, including 1 entities, in source file output_files/clkdivider.vhd
+    Info (12022): Found design unit 1: ClkDivider-arcDivier
+    Info (12023): Found entity 1: ClkDivider
+Info (12021): Found 2 design units, including 1 entities, in source file output_files/top_tb.vhd
+    Info (12022): Found design unit 1: top_tb-arc_top_tb
+    Info (12023): Found entity 1: top_tb
+Info (12021): Found 2 design units, including 1 entities, in source file led_output.vhd
+    Info (12022): Found design unit 1: LED_Output-arcDisplay
+    Info (12023): Found entity 1: LED_Output
 Info (12127): Elaborating entity "KeyBoard_TOP" for the top level hierarchy
 Info (12128): Elaborating entity "ColScan" for hierarchy "ColScan:CS0"
 Info (12128): Elaborating entity "RowScan" for hierarchy "RowScan:RS0"
 Info (12128): Elaborating entity "JitterEliminator" for hierarchy "RowScan:RS0|JitterEliminator:J0"
+Info (12128): Elaborating entity "LED_Output" for hierarchy "LED_Output:LO0"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LED_dis_sel" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 130 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 175 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 115 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4696 megabytes
-    Info: Processing ended: Tue Nov 10 17:31:08 2020
-    Info: Elapsed time: 00:00:03
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 157 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 541 megabytes
+    Info: Processing ended: Tue Nov 10 20:53:13 2020
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -27,18 +27,22 @@ begin
 			cnt_H <= COUNTER_RST;
 			cnt_L <= COUNTER_RST;
 			Sig_out <= '1';
-		elsif (clk'event and clk = '1') then	-- It seems only Asynchronous reset can make cnt work...
-			if (cnt_H = MATCH_NUM) then
-				Sig_out <= '1';
-			elsif (cnt_L = MATCH_NUM) then
-				Sig_out <= '0';
-			else
-				if (Sig_in = '1') then
-					cnt_H <= cnt_H + 1;
-				elsif (Sig_in = '0') then
-					cnt_L <= cnt_L + 1;
+		else
+			if (clk'event and clk = '1') then	-- It seems only Asynchronous reset can make cnt work...
+				if (cnt_H = MATCH_NUM) then
+					Sig_out <= '1';
+					cnt_H <= COUNTER_RST;
+				elsif (cnt_L = MATCH_NUM) then
+					Sig_out <= '0';
+					cnt_L <= COUNTER_RST;
 				else
-					null;
+					if (Sig_in = '1') then
+						cnt_H <= cnt_H + 1;
+					elsif (Sig_in = '0') then
+						cnt_L <= cnt_L + 1;
+					else
+						null;
+					end if;
 				end if;
 			end if;
 		end if;

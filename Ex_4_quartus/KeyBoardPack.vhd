@@ -44,9 +44,9 @@ constant KEY_pound_sign : STD_LOGIC_VECTOR := "11111";		-- #
 
 constant KEY_RST: STD_LOGIC_VECTOR := "00000";	-- means the status is reset
 
-constant COUNTER_WIDTH : INTEGER := 8;
-constant COUNTER_RST : STD_LOGIC_VECTOR := "00000000";
-constant COUNT_NUM : INTEGER := 100;
-constant MATCH_NUM : INTEGER := 70;
+constant COUNTER_WIDTH : INTEGER := 10;
+constant COUNTER_RST : STD_LOGIC_VECTOR := "0000000000";
+constant COUNT_NUM : INTEGER := 1000;
+constant MATCH_NUM : INTEGER := 700;
 
 end package;
